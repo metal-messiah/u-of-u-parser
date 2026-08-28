@@ -6,34 +6,35 @@
 <title>Evaluated Postings &mdash; U of U NP/APRN Search</title>
 <style>
   * { box-sizing: border-box; }
-  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 860px; margin: 2rem auto; padding: 0 1rem; color: #1a1a1a; overflow-wrap: break-word; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 860px; margin: 2rem auto; padding: 0 1rem; background: #0d1117; color: #e6edf3; overflow-wrap: break-word; }
   h1 { font-size: 1.4rem; }
-  .generated { color: #666; font-size: 0.85rem; margin-bottom: 1.5rem; }
+  .generated { color: #8b949e; font-size: 0.85rem; margin-bottom: 1.5rem; }
   .back-link { display: inline-block; margin-bottom: 1.5rem; font-size: 0.85rem; }
   details summary { cursor: pointer; font-weight: 600; margin: 1.5rem 0 0.8rem; }
   
-  .job { border: 1px solid #ddd; border-radius: 8px; padding: 0.9rem 1.1rem; margin-bottom: 0.9rem; background: #fff; }
+  a { color: #6cb1ff; }
+  .job { border: 1px solid #30363d; border-radius: 8px; padding: 0.9rem 1.1rem; margin-bottom: 0.9rem; background: #161b22; }
   .job.closed { opacity: 0.6; }
-  .excluded-section { background: #f6ecec; border: 1px solid #e3caca; border-radius: 10px; padding: 0.75rem 1.1rem 1.1rem; margin-top: 1rem; }
-  .excluded-section summary { color: #7a2f2f; }
-  .excluded-section .job { border-color: #e3caca; }
-  .job h3 { margin: 0 0 0.6rem; padding-bottom: 0.5rem; font-size: 1.05rem; border-bottom: 1px solid #eee; }
-  .section { padding: 0.35rem 0.6rem; margin: 0.4rem 0; border-radius: 6px; border-left: 4px solid; font-size: 0.85rem; color: #333; }
+  .excluded-section { background: #201515; border: 1px solid #4a2e2e; border-radius: 10px; padding: 0.75rem 1.1rem 1.1rem; margin-top: 1rem; }
+  .excluded-section summary { color: #e59a9a; }
+  .excluded-section .job { border-color: #3d2828; background: #1a1212; }
+  .job h3 { margin: 0 0 0.6rem; padding-bottom: 0.5rem; font-size: 1.05rem; border-bottom: 1px solid #30363d; color: #e6edf3; }
+  .section { padding: 0.35rem 0.6rem; margin: 0.4rem 0; border-radius: 6px; border-left: 4px solid; font-size: 0.85rem; color: #cdd5dd; }
   .section-label { display: block; font-weight: 700; text-transform: uppercase; font-size: 0.65rem; letter-spacing: 0.05em; margin-bottom: 0.15rem; }
-  .section-details { background: #eef4fc; border-color: #4c7fd6; }
-  .section-details .section-label { color: #2f5aa8; }
-  .section-dates { background: #fdf3e7; border-color: #d98f2b; }
-  .section-dates .section-label { color: #a15f0d; }
-  .section-why { background: #eaf7ee; border-color: #3fa35a; }
-  .section-why .section-label { color: #227a3c; }
-  .section-reason { background: #fbeaea; border-color: #cc4b4b; }
-  .section-reason .section-label { color: #a12f2f; }
-  .apply-link { display: inline-block; margin-top: 0.5rem; padding: 0.4rem 0.85rem; background: #2f5aa8; color: #fff !important; border-radius: 6px; font-size: 0.85rem; text-decoration: none; font-weight: 600; }
-  .apply-link:hover { background: #24457f; }
+  .section-details { background: #10233c; border-color: #4c8eff; }
+  .section-details .section-label { color: #86b6ff; }
+  .section-dates { background: #362a13; border-color: #e0a030; }
+  .section-dates .section-label { color: #f0c179; }
+  .section-why { background: #113321; border-color: #3fbd6a; }
+  .section-why .section-label { color: #7fe3a0; }
+  .section-reason { background: #391414; border-color: #e05252; }
+  .section-reason .section-label { color: #ff9d9d; }
+  .apply-link { display: inline-block; margin-top: 0.5rem; padding: 0.4rem 0.85rem; background: #2f6feb; color: #fff !important; border-radius: 6px; font-size: 0.85rem; text-decoration: none; font-weight: 600; }
+  .apply-link:hover { background: #1f4fb0; }
   .badge { font-size: 0.7rem; font-weight: 600; padding: 0.1rem 0.45rem; border-radius: 4px; vertical-align: middle; }
-  .badge.new { background: #d4f7dc; color: #146c2e; }
-  .badge.updated { background: #fff3cd; color: #8a6100; }
-  .badge.closed { background: #eee; color: #666; }
+  .badge.new { background: #113321; color: #7fe3a0; }
+  .badge.updated { background: #362a13; color: #f0c179; }
+  .badge.closed { background: #262c33; color: #9aa4af; }
 
   @media (max-width: 480px) {
     body { margin: 1.25rem auto; padding: 0 0.75rem; }
@@ -48,9 +49,9 @@
 <body>
   <h1>Evaluated Postings &mdash; This Run</h1>
   <p class="generated">
-    Generated <span id="generated-time" data-utc="2026-08-28T22:25:26.334Z">Aug 28, 2026, 10:25 PM UTC</span><script>(function(){var el=document.getElementById("generated-time");if(!el)return;var d=new Date(el.getAttribute("data-utc"));if(isNaN(d))return;var dt=d.toLocaleString(undefined,{dateStyle:"medium",timeStyle:"short"});var tzParts=new Intl.DateTimeFormat(undefined,{timeZoneName:"short"}).formatToParts(d);var tz=(tzParts.find(function(p){return p.type==="timeZoneName"})||{}).value||"";el.textContent=dt+(tz?" "+tz:"");})();</script> &middot;
-    1313 unique posting(s) evaluated across all search queries &middot;
-    10 included &middot; 1303 excluded
+    Generated <span id="generated-time" data-utc="2026-08-28T22:30:53.482Z">Aug 28, 2026, 10:30 PM UTC</span><script>(function(){var el=document.getElementById("generated-time");if(!el)return;var d=new Date(el.getAttribute("data-utc"));if(isNaN(d))return;var dt=d.toLocaleString(undefined,{dateStyle:"medium",timeStyle:"short"});var tzParts=new Intl.DateTimeFormat(undefined,{timeZoneName:"short"}).formatToParts(d);var tz=(tzParts.find(function(p){return p.type==="timeZoneName"})||{}).value||"";el.textContent=dt+(tz?" "+tz:"");})();</script> &middot;
+    1306 unique posting(s) evaluated across all search queries &middot;
+    10 included &middot; 1296 excluded
   </p>
   <p class="back-link"><a href="index.html">&larr; Back to tracked jobs report</a></p>
 
@@ -147,7 +148,7 @@
   
 
   <details open class="excluded-section">
-    <summary>Excluded (1303)</summary>
+    <summary>Excluded (1296)</summary>
     
     <article class="job">
       <h3>PS Nurse Practitioner <span class="badge closed">Excluded</span></h3>
@@ -2400,20 +2401,20 @@
   
 
     <article class="job">
-      <h3>Medical Assistant II SJHC Primary Care <span class="badge closed">Excluded</span></h3>
-      <div class="section section-details"><span class="section-label">Details</span>University of Utah Health Hospitals and Clinics &middot; SOUTH JORDAN, UT &middot; found via &quot;Advanced Practice Provider&quot;</div>
-      
-      <div class="section section-reason"><span class="section-label">Excluded because</span>No NP/APRN role match, no pediatric match</div>
-      <a class="apply-link" href="https://rr.jobsyn.org/C6EDE52482334D1787AE11910E723C80" target="_blank" rel="noopener">View posting &rarr;</a>
-    </article>
-  
-
-    <article class="job">
       <h3>Medical Assistant - MA, EMT, AEMT -  CT Imaging - Part Time <span class="badge closed">Excluded</span></h3>
       <div class="section section-details"><span class="section-label">Details</span>University of Utah Health Hospitals and Clinics &middot; SALT LAKE CITY, UT &middot; found via &quot;Advanced Practice Provider&quot;</div>
       
       <div class="section section-reason"><span class="section-label">Excluded because</span>No NP/APRN role match, no pediatric match</div>
       <a class="apply-link" href="https://rr.jobsyn.org/1F5159DCB6D443829DBEDB60FA2FE2EB" target="_blank" rel="noopener">View posting &rarr;</a>
+    </article>
+  
+
+    <article class="job">
+      <h3>Medical Assistant II SJHC Primary Care <span class="badge closed">Excluded</span></h3>
+      <div class="section section-details"><span class="section-label">Details</span>University of Utah Health Hospitals and Clinics &middot; SOUTH JORDAN, UT &middot; found via &quot;Advanced Practice Provider&quot;</div>
+      
+      <div class="section section-reason"><span class="section-label">Excluded because</span>No NP/APRN role match, no pediatric match</div>
+      <a class="apply-link" href="https://rr.jobsyn.org/C6EDE52482334D1787AE11910E723C80" target="_blank" rel="noopener">View posting &rarr;</a>
     </article>
   
 
@@ -3777,20 +3778,20 @@
   
 
     <article class="job">
-      <h3>Radiologic Technologist - ORTHO <span class="badge closed">Excluded</span></h3>
-      <div class="section section-details"><span class="section-label">Details</span>University of Utah Health Hospitals and Clinics &middot; SALT LAKE CITY, UT &middot; found via &quot;APP&quot;</div>
-      
-      <div class="section section-reason"><span class="section-label">Excluded because</span>No NP/APRN role match, no pediatric match</div>
-      <a class="apply-link" href="https://rr.jobsyn.org/BA5EBD329DBE427D8086DE79F3305AB5" target="_blank" rel="noopener">View posting &rarr;</a>
-    </article>
-  
-
-    <article class="job">
       <h3>Radiologic Technologist - Part Time Benefited <span class="badge closed">Excluded</span></h3>
       <div class="section section-details"><span class="section-label">Details</span>University of Utah Health Hospitals and Clinics &middot; Midvale, UT &middot; found via &quot;APP&quot;</div>
       
       <div class="section section-reason"><span class="section-label">Excluded because</span>No NP/APRN role match, no pediatric match</div>
       <a class="apply-link" href="https://rr.jobsyn.org/DDBAEA5A24F14489A03033ABFEBE4BD1" target="_blank" rel="noopener">View posting &rarr;</a>
+    </article>
+  
+
+    <article class="job">
+      <h3>Radiologic Technologist - ORTHO <span class="badge closed">Excluded</span></h3>
+      <div class="section section-details"><span class="section-label">Details</span>University of Utah Health Hospitals and Clinics &middot; SALT LAKE CITY, UT &middot; found via &quot;APP&quot;</div>
+      
+      <div class="section section-reason"><span class="section-label">Excluded because</span>No NP/APRN role match, no pediatric match</div>
+      <a class="apply-link" href="https://rr.jobsyn.org/BA5EBD329DBE427D8086DE79F3305AB5" target="_blank" rel="noopener">View posting &rarr;</a>
     </article>
   
 
@@ -3903,20 +3904,20 @@
   
 
     <article class="job">
-      <h3>Chaplain - PRN <span class="badge closed">Excluded</span></h3>
-      <div class="section section-details"><span class="section-label">Details</span>University of Utah Health Hospitals and Clinics &middot; SALT LAKE CITY, UT &middot; found via &quot;APP&quot;</div>
-      
-      <div class="section section-reason"><span class="section-label">Excluded because</span>No NP/APRN role match, no pediatric match</div>
-      <a class="apply-link" href="https://rr.jobsyn.org/C7A2FAC65E764096965BB6921FC71FAE" target="_blank" rel="noopener">View posting &rarr;</a>
-    </article>
-  
-
-    <article class="job">
       <h3>Surgical Oncologist - Commensurate with Qualifications <span class="badge closed">Excluded</span></h3>
       <div class="section section-details"><span class="section-label">Details</span>University of Utah &middot; 02444 - ONCOLOGY DIVISION &middot; Salt Lake City, UT &middot; found via &quot;APP&quot;</div>
       
       <div class="section section-reason"><span class="section-label">Excluded because</span>No NP/APRN role match, no pediatric match</div>
       <a class="apply-link" href="https://rr.jobsyn.org/0D75CB9C890144C9B0A53F2FEF60036B" target="_blank" rel="noopener">View posting &rarr;</a>
+    </article>
+  
+
+    <article class="job">
+      <h3>Chaplain - PRN <span class="badge closed">Excluded</span></h3>
+      <div class="section section-details"><span class="section-label">Details</span>University of Utah Health Hospitals and Clinics &middot; SALT LAKE CITY, UT &middot; found via &quot;APP&quot;</div>
+      
+      <div class="section section-reason"><span class="section-label">Excluded because</span>No NP/APRN role match, no pediatric match</div>
+      <a class="apply-link" href="https://rr.jobsyn.org/C7A2FAC65E764096965BB6921FC71FAE" target="_blank" rel="noopener">View posting &rarr;</a>
     </article>
   
 
@@ -3957,20 +3958,20 @@
   
 
     <article class="job">
-      <h3>Licensed Clinical Social Worker <span class="badge closed">Excluded</span></h3>
-      <div class="section section-details"><span class="section-label">Details</span>University of Utah Health Hospitals and Clinics &middot; South Salt Lake, UT &middot; found via &quot;APP&quot;</div>
-      
-      <div class="section section-reason"><span class="section-label">Excluded because</span>No NP/APRN role match, no pediatric match</div>
-      <a class="apply-link" href="https://rr.jobsyn.org/BF248B828D1E48E3AB153700E569C68C" target="_blank" rel="noopener">View posting &rarr;</a>
-    </article>
-  
-
-    <article class="job">
       <h3>Guest Services Specialist <span class="badge closed">Excluded</span></h3>
       <div class="section section-details"><span class="section-label">Details</span>University of Utah Health Hospitals and Clinics &middot; SALT LAKE CITY, UT &middot; found via &quot;APP&quot;</div>
       
       <div class="section section-reason"><span class="section-label">Excluded because</span>No NP/APRN role match, no pediatric match</div>
       <a class="apply-link" href="https://rr.jobsyn.org/A4F50C7F58E74500818727669FE47EFC" target="_blank" rel="noopener">View posting &rarr;</a>
+    </article>
+  
+
+    <article class="job">
+      <h3>Licensed Clinical Social Worker <span class="badge closed">Excluded</span></h3>
+      <div class="section section-details"><span class="section-label">Details</span>University of Utah Health Hospitals and Clinics &middot; South Salt Lake, UT &middot; found via &quot;APP&quot;</div>
+      
+      <div class="section section-reason"><span class="section-label">Excluded because</span>No NP/APRN role match, no pediatric match</div>
+      <a class="apply-link" href="https://rr.jobsyn.org/BF248B828D1E48E3AB153700E569C68C" target="_blank" rel="noopener">View posting &rarr;</a>
     </article>
   
 
@@ -5370,20 +5371,20 @@
   
 
     <article class="job">
-      <h3>Temporary Beer Server <span class="badge closed">Excluded</span></h3>
-      <div class="section section-details"><span class="section-label">Details</span>University of Utah &middot; 00842 - Rice-Eccles Stadium &middot; Salt Lake City, UT &middot; found via &quot;APP&quot;</div>
-      
-      <div class="section section-reason"><span class="section-label">Excluded because</span>No NP/APRN role match, no pediatric match</div>
-      <a class="apply-link" href="https://rr.jobsyn.org/413F172E16D245DCAE9461AC5CC58D89" target="_blank" rel="noopener">View posting &rarr;</a>
-    </article>
-  
-
-    <article class="job">
       <h3>Associate Program Director, University of Utah Graduate Program in Genetic Counseling <span class="badge closed">Excluded</span></h3>
       <div class="section section-details"><span class="section-label">Details</span>University of Utah &middot; 00848 - Pediatric Administration &middot; Salt Lake City, UT &middot; found via &quot;APP&quot;</div>
       <div class="section section-why"><span class="section-label">Why</span><div><strong>Match term(s):</strong> Pediatric, Children</div></div>
       <div class="section section-reason"><span class="section-label">Excluded because</span>No NP/APRN role match in title</div>
       <a class="apply-link" href="https://rr.jobsyn.org/15A7A8B7CBB74976ADD1D780A07C863B" target="_blank" rel="noopener">View posting &rarr;</a>
+    </article>
+  
+
+    <article class="job">
+      <h3>Temporary Beer Server <span class="badge closed">Excluded</span></h3>
+      <div class="section section-details"><span class="section-label">Details</span>University of Utah &middot; 00842 - Rice-Eccles Stadium &middot; Salt Lake City, UT &middot; found via &quot;APP&quot;</div>
+      
+      <div class="section section-reason"><span class="section-label">Excluded because</span>No NP/APRN role match, no pediatric match</div>
+      <a class="apply-link" href="https://rr.jobsyn.org/413F172E16D245DCAE9461AC5CC58D89" target="_blank" rel="noopener">View posting &rarr;</a>
     </article>
   
 
@@ -5964,15 +5965,6 @@
   
 
     <article class="job">
-      <h3>Nurse Patient Care Coordinator – Breast Surgical <span class="badge closed">Excluded</span></h3>
-      <div class="section section-details"><span class="section-label">Details</span>University of Utah Health Hospitals and Clinics &middot; SALT LAKE CITY, UT &middot; found via &quot;APP&quot;</div>
-      <div class="section section-why"><span class="section-label">Why</span><div><strong>Matched role:</strong> Care Coordinator</div></div>
-      <div class="section section-reason"><span class="section-label">Excluded because</span>No pediatric term in title/description</div>
-      <a class="apply-link" href="https://rr.jobsyn.org/21F3DE37F61E46B88A3B62134E7DDFBD" target="_blank" rel="noopener">View posting &rarr;</a>
-    </article>
-  
-
-    <article class="job">
       <h3>Multisite Operations Manager <span class="badge closed">Excluded</span></h3>
       <div class="section section-details"><span class="section-label">Details</span>University of Utah &middot; 01345 - HCI Clinical Resrch Compliance &middot; Salt Lake City, UT &middot; found via &quot;APP&quot;</div>
       
@@ -6063,15 +6055,6 @@
   
 
     <article class="job">
-      <h3>Accountant <span class="badge closed">Excluded</span></h3>
-      <div class="section section-details"><span class="section-label">Details</span>University of Utah Health Hospitals and Clinics &middot; SALT LAKE CITY, UT &middot; found via &quot;APP&quot;</div>
-      
-      <div class="section section-reason"><span class="section-label">Excluded because</span>No NP/APRN role match, no pediatric match</div>
-      <a class="apply-link" href="https://rr.jobsyn.org/A2B027CAD8A24EA9BF43561CA1D3E749" target="_blank" rel="noopener">View posting &rarr;</a>
-    </article>
-  
-
-    <article class="job">
       <h3>Utility Plant Management <span class="badge closed">Excluded</span></h3>
       <div class="section section-details"><span class="section-label">Details</span>University of Utah &middot; 01742 - Central Plant &middot; Salt Lake City, UT &middot; found via &quot;APP&quot;</div>
       
@@ -6081,11 +6064,29 @@
   
 
     <article class="job">
+      <h3>Accountant <span class="badge closed">Excluded</span></h3>
+      <div class="section section-details"><span class="section-label">Details</span>University of Utah Health Hospitals and Clinics &middot; SALT LAKE CITY, UT &middot; found via &quot;APP&quot;</div>
+      
+      <div class="section section-reason"><span class="section-label">Excluded because</span>No NP/APRN role match, no pediatric match</div>
+      <a class="apply-link" href="https://rr.jobsyn.org/A2B027CAD8A24EA9BF43561CA1D3E749" target="_blank" rel="noopener">View posting &rarr;</a>
+    </article>
+  
+
+    <article class="job">
       <h3>Breakfast Attendant <span class="badge closed">Excluded</span></h3>
       <div class="section section-details"><span class="section-label">Details</span>University of Utah &middot; 01115 - Guest House &middot; Salt Lake City, UT &middot; found via &quot;APP&quot;</div>
       
       <div class="section section-reason"><span class="section-label">Excluded because</span>No NP/APRN role match, no pediatric match</div>
       <a class="apply-link" href="https://rr.jobsyn.org/2E20818006184EFABD72CCDBB043F25D" target="_blank" rel="noopener">View posting &rarr;</a>
+    </article>
+  
+
+    <article class="job">
+      <h3>Certified Peer Specialist - Youth Crisis Care <span class="badge closed">Excluded</span></h3>
+      <div class="section section-details"><span class="section-label">Details</span>University of Utah Health Hospitals and Clinics &middot; SALT LAKE CITY, UT &middot; found via &quot;APP&quot;</div>
+      <div class="section section-why"><span class="section-label">Why</span><div><strong>Match term(s):</strong> child, Youth</div></div>
+      <div class="section section-reason"><span class="section-label">Excluded because</span>No NP/APRN role match in title</div>
+      <a class="apply-link" href="https://rr.jobsyn.org/9CCA75F4366249F89C9DC1FCE27CD252" target="_blank" rel="noopener">View posting &rarr;</a>
     </article>
   
 
@@ -6639,20 +6640,20 @@
   
 
     <article class="job">
-      <h3>HR Events &amp; Project Manager <span class="badge closed">Excluded</span></h3>
-      <div class="section section-details"><span class="section-label">Details</span>University of Utah Health Hospitals and Clinics &middot; SALT LAKE CITY, UT &middot; found via &quot;APP&quot;</div>
-      
-      <div class="section section-reason"><span class="section-label">Excluded because</span>No NP/APRN role match, no pediatric match</div>
-      <a class="apply-link" href="https://rr.jobsyn.org/8F855277CF4A4C748E09953C8B8AA880" target="_blank" rel="noopener">View posting &rarr;</a>
-    </article>
-  
-
-    <article class="job">
       <h3>Pediatric Pathology Asst, Assoc, Full Professor <span class="badge closed">Excluded</span></h3>
       <div class="section section-details"><span class="section-label">Details</span>University of Utah &middot; 00247 - Pathology &middot; Salt Lake City, UT &middot; found via &quot;APP&quot;</div>
       <div class="section section-why"><span class="section-label">Why</span><div><strong>Match term(s):</strong> Pediatric, Children</div></div>
       <div class="section section-reason"><span class="section-label">Excluded because</span>No NP/APRN role match in title</div>
       <a class="apply-link" href="https://rr.jobsyn.org/D544AE3988C74AB1BB435DD30CED512C" target="_blank" rel="noopener">View posting &rarr;</a>
+    </article>
+  
+
+    <article class="job">
+      <h3>HR Events &amp; Project Manager <span class="badge closed">Excluded</span></h3>
+      <div class="section section-details"><span class="section-label">Details</span>University of Utah Health Hospitals and Clinics &middot; SALT LAKE CITY, UT &middot; found via &quot;APP&quot;</div>
+      
+      <div class="section section-reason"><span class="section-label">Excluded because</span>No NP/APRN role match, no pediatric match</div>
+      <a class="apply-link" href="https://rr.jobsyn.org/8F855277CF4A4C748E09953C8B8AA880" target="_blank" rel="noopener">View posting &rarr;</a>
     </article>
   
 
@@ -7580,15 +7581,6 @@
       
       <div class="section section-reason"><span class="section-label">Excluded because</span>No NP/APRN role match, no pediatric match</div>
       <a class="apply-link" href="https://rr.jobsyn.org/85B8D9CBFCEB4F65B019120B3FBA6E68" target="_blank" rel="noopener">View posting &rarr;</a>
-    </article>
-  
-
-    <article class="job">
-      <h3>Marketing and Communication Specialist - SafeUT <span class="badge closed">Excluded</span></h3>
-      <div class="section section-details"><span class="section-label">Details</span>University of Utah Health Hospitals and Clinics &middot; SALT LAKE CITY, UT &middot; found via &quot;APP&quot;</div>
-      <div class="section section-why"><span class="section-label">Why</span><div><strong>Match term(s):</strong> youth</div></div>
-      <div class="section section-reason"><span class="section-label">Excluded because</span>No NP/APRN role match in title</div>
-      <a class="apply-link" href="https://rr.jobsyn.org/14BDF694E1C144709894C190E5DF98BF" target="_blank" rel="noopener">View posting &rarr;</a>
     </article>
   
 
@@ -8619,20 +8611,20 @@
   
 
     <article class="job">
-      <h3>Thoracic/Head &amp; Neck Oncology Nurse Care Coordinator <span class="badge closed">Excluded</span></h3>
-      <div class="section section-details"><span class="section-label">Details</span>University of Utah Health Hospitals and Clinics &middot; SALT LAKE CITY, UT &middot; found via &quot;APP&quot;</div>
-      <div class="section section-why"><span class="section-label">Why</span><div><strong>Matched role:</strong> Care Coordinator</div></div>
-      <div class="section section-reason"><span class="section-label">Excluded because</span>No pediatric term in title/description</div>
-      <a class="apply-link" href="https://rr.jobsyn.org/D9CAB393108B42AD8222F78352E259E5" target="_blank" rel="noopener">View posting &rarr;</a>
-    </article>
-  
-
-    <article class="job">
       <h3>Manager, Nursing, Neuro Acute Care <span class="badge closed">Excluded</span></h3>
       <div class="section section-details"><span class="section-label">Details</span>University of Utah Health Hospitals and Clinics &middot; SALT LAKE CITY, UT &middot; found via &quot;APP&quot;</div>
       
       <div class="section section-reason"><span class="section-label">Excluded because</span>No NP/APRN role match, no pediatric match</div>
       <a class="apply-link" href="https://rr.jobsyn.org/94A52FA7CB954B2CBFD57DAE59A8D2E3" target="_blank" rel="noopener">View posting &rarr;</a>
+    </article>
+  
+
+    <article class="job">
+      <h3>Thoracic/Head &amp; Neck Oncology Nurse Care Coordinator <span class="badge closed">Excluded</span></h3>
+      <div class="section section-details"><span class="section-label">Details</span>University of Utah Health Hospitals and Clinics &middot; SALT LAKE CITY, UT &middot; found via &quot;APP&quot;</div>
+      <div class="section section-why"><span class="section-label">Why</span><div><strong>Matched role:</strong> Care Coordinator</div></div>
+      <div class="section section-reason"><span class="section-label">Excluded because</span>No pediatric term in title/description</div>
+      <a class="apply-link" href="https://rr.jobsyn.org/D9CAB393108B42AD8222F78352E259E5" target="_blank" rel="noopener">View posting &rarr;</a>
     </article>
   
 
@@ -9618,20 +9610,20 @@
   
 
     <article class="job">
-      <h3>MRI Technologist, Certified <span class="badge closed">Excluded</span></h3>
-      <div class="section section-details"><span class="section-label">Details</span>University of Utah Health Hospitals and Clinics &middot; SALT LAKE CITY, UT &middot; found via &quot;APP&quot;</div>
-      
-      <div class="section section-reason"><span class="section-label">Excluded because</span>No NP/APRN role match, no pediatric match</div>
-      <a class="apply-link" href="https://rr.jobsyn.org/BDC4B7E0696E48278287D78EF8D7A4A0" target="_blank" rel="noopener">View posting &rarr;</a>
-    </article>
-  
-
-    <article class="job">
       <h3>Assistant Professor - Peripheral Nerve PhD Scientist (Tenure or Research track) <span class="badge closed">Excluded</span></h3>
       <div class="section section-details"><span class="section-label">Details</span>University of Utah &middot; 00268 - Neurosurgery &middot; Salt Lake City, UT &middot; found via &quot;APP&quot;</div>
       
       <div class="section section-reason"><span class="section-label">Excluded because</span>No NP/APRN role match, no pediatric match</div>
       <a class="apply-link" href="https://rr.jobsyn.org/DF4B5DC7970B4192BDED4FEAA1E95B70" target="_blank" rel="noopener">View posting &rarr;</a>
+    </article>
+  
+
+    <article class="job">
+      <h3>MRI Technologist, Certified <span class="badge closed">Excluded</span></h3>
+      <div class="section section-details"><span class="section-label">Details</span>University of Utah Health Hospitals and Clinics &middot; SALT LAKE CITY, UT &middot; found via &quot;APP&quot;</div>
+      
+      <div class="section section-reason"><span class="section-label">Excluded because</span>No NP/APRN role match, no pediatric match</div>
+      <a class="apply-link" href="https://rr.jobsyn.org/BDC4B7E0696E48278287D78EF8D7A4A0" target="_blank" rel="noopener">View posting &rarr;</a>
     </article>
   
 
@@ -10878,6 +10870,15 @@
   
 
     <article class="job">
+      <h3>Nurse Patient Care Coordinator – Breast Surgical <span class="badge closed">Excluded</span></h3>
+      <div class="section section-details"><span class="section-label">Details</span>University of Utah Health Hospitals and Clinics &middot; SALT LAKE CITY, UT &middot; found via &quot;Nurse Educator&quot;</div>
+      <div class="section section-why"><span class="section-label">Why</span><div><strong>Matched role:</strong> Care Coordinator</div></div>
+      <div class="section section-reason"><span class="section-label">Excluded because</span>No pediatric term in title/description</div>
+      <a class="apply-link" href="https://rr.jobsyn.org/21F3DE37F61E46B88A3B62134E7DDFBD" target="_blank" rel="noopener">View posting &rarr;</a>
+    </article>
+  
+
+    <article class="job">
       <h3>Assistant Professor (Clinical) - Oculoplastics <span class="badge closed">Excluded</span></h3>
       <div class="section section-details"><span class="section-label">Details</span>University of Utah &middot; 00267 - Ophthalmology-Services &middot; Salt Lake City, UT &middot; found via &quot;Nurse Educator&quot;</div>
       
@@ -11202,15 +11203,6 @@
   
 
     <article class="job">
-      <h3>Certified Peer Specialist - Youth Crisis Care <span class="badge closed">Excluded</span></h3>
-      <div class="section section-details"><span class="section-label">Details</span>University of Utah Health Hospitals and Clinics &middot; SALT LAKE CITY, UT &middot; found via &quot;Case Manager&quot;</div>
-      <div class="section section-why"><span class="section-label">Why</span><div><strong>Match term(s):</strong> child, Youth</div></div>
-      <div class="section section-reason"><span class="section-label">Excluded because</span>No NP/APRN role match in title</div>
-      <a class="apply-link" href="https://rr.jobsyn.org/9CCA75F4366249F89C9DC1FCE27CD252" target="_blank" rel="noopener">View posting &rarr;</a>
-    </article>
-  
-
-    <article class="job">
       <h3>Patient Services Specialist <span class="badge closed">Excluded</span></h3>
       <div class="section section-details"><span class="section-label">Details</span>University of Utah Health Hospitals and Clinics &middot; Salt Lake City, UT &middot; found via &quot;Case Manager&quot;</div>
       
@@ -11432,6 +11424,15 @@
       
       <div class="section section-reason"><span class="section-label">Excluded because</span>No NP/APRN role match, no pediatric match</div>
       <a class="apply-link" href="https://rr.jobsyn.org/F62E1F7F3B984EF18E612162CD5BBD15" target="_blank" rel="noopener">View posting &rarr;</a>
+    </article>
+  
+
+    <article class="job">
+      <h3>Marketing and Communication Specialist - SafeUT <span class="badge closed">Excluded</span></h3>
+      <div class="section section-details"><span class="section-label">Details</span>University of Utah Health Hospitals and Clinics &middot; SALT LAKE CITY, UT &middot; found via &quot;Care Coordinator&quot;</div>
+      <div class="section section-why"><span class="section-label">Why</span><div><strong>Match term(s):</strong> youth</div></div>
+      <div class="section section-reason"><span class="section-label">Excluded because</span>No NP/APRN role match in title</div>
+      <a class="apply-link" href="https://rr.jobsyn.org/14BDF694E1C144709894C190E5DF98BF" target="_blank" rel="noopener">View posting &rarr;</a>
     </article>
   
 
@@ -11810,69 +11811,6 @@
       
       <div class="section section-reason"><span class="section-label">Excluded because</span>No NP/APRN role match, no pediatric match</div>
       <a class="apply-link" href="https://rr.jobsyn.org/3B81990F2D7B4752AFAD0ADC66345B59" target="_blank" rel="noopener">View posting &rarr;</a>
-    </article>
-  
-
-    <article class="job">
-      <h3>Medical Assistant - MA, EMT, AEMT - Sugarhouse Health Center – Part Time <span class="badge closed">Excluded</span></h3>
-      <div class="section section-details"><span class="section-label">Details</span>University of Utah Health Hospitals and Clinics &middot; SALT LAKE CITY, UT &middot; found via &quot;Clinical Research Coordinator&quot;</div>
-      
-      <div class="section section-reason"><span class="section-label">Excluded because</span>No NP/APRN role match, no pediatric match</div>
-      <a class="apply-link" href="https://rr.jobsyn.org/2440E7D8971347CC9CB9B4B730190FA5" target="_blank" rel="noopener">View posting &rarr;</a>
-    </article>
-  
-
-    <article class="job">
-      <h3>Medical Assistant - MA, EMT, AEMT - University of Utah Hospital – Full-Time <span class="badge closed">Excluded</span></h3>
-      <div class="section section-details"><span class="section-label">Details</span>University of Utah Health Hospitals and Clinics &middot; SALT LAKE CITY, UT &middot; found via &quot;Clinical Research Coordinator&quot;</div>
-      <div class="section section-why"><span class="section-label">Why</span><div><strong>Match term(s):</strong> PEDIATRIC</div></div>
-      <div class="section section-reason"><span class="section-label">Excluded because</span>No NP/APRN role match in title</div>
-      <a class="apply-link" href="https://rr.jobsyn.org/3CA953D33E164EB197F9A90A91D052BD" target="_blank" rel="noopener">View posting &rarr;</a>
-    </article>
-  
-
-    <article class="job">
-      <h3>Medical Assistant - MA, EMT, AEMT - University of Utah Hospital – Full-Time <span class="badge closed">Excluded</span></h3>
-      <div class="section section-details"><span class="section-label">Details</span>University of Utah Health Hospitals and Clinics &middot; SALT LAKE CITY, UT &middot; found via &quot;Clinical Research Coordinator&quot;</div>
-      
-      <div class="section section-reason"><span class="section-label">Excluded because</span>No NP/APRN role match, no pediatric match</div>
-      <a class="apply-link" href="https://rr.jobsyn.org/1962A10C027447C18304B204C3917D64" target="_blank" rel="noopener">View posting &rarr;</a>
-    </article>
-  
-
-    <article class="job">
-      <h3>Medical Assistant - MA, EMT, AEMT - University of Utah Hospital – Full-Time <span class="badge closed">Excluded</span></h3>
-      <div class="section section-details"><span class="section-label">Details</span>University of Utah Health Hospitals and Clinics &middot; SALT LAKE CITY, UT &middot; found via &quot;Clinical Research Coordinator&quot;</div>
-      
-      <div class="section section-reason"><span class="section-label">Excluded because</span>No NP/APRN role match, no pediatric match</div>
-      <a class="apply-link" href="https://rr.jobsyn.org/4D0121952DD84E7384D1DF353E1E39DF" target="_blank" rel="noopener">View posting &rarr;</a>
-    </article>
-  
-
-    <article class="job">
-      <h3>Medical Assistant - MA, EMT, AEMT - Sugarhouse Health Center – Full Time <span class="badge closed">Excluded</span></h3>
-      <div class="section section-details"><span class="section-label">Details</span>University of Utah Health Hospitals and Clinics &middot; SALT LAKE CITY, UT &middot; found via &quot;Clinical Research Coordinator&quot;</div>
-      
-      <div class="section section-reason"><span class="section-label">Excluded because</span>No NP/APRN role match, no pediatric match</div>
-      <a class="apply-link" href="https://rr.jobsyn.org/1AC38FA23E9C44A98ECEC663D292BC05" target="_blank" rel="noopener">View posting &rarr;</a>
-    </article>
-  
-
-    <article class="job">
-      <h3>Medical Assistant I/II or EMT-B/AEMT <span class="badge closed">Excluded</span></h3>
-      <div class="section section-details"><span class="section-label">Details</span>University of Utah Health Hospitals and Clinics &middot; SALT LAKE CITY, UT &middot; found via &quot;Clinical Research Coordinator&quot;</div>
-      
-      <div class="section section-reason"><span class="section-label">Excluded because</span>No NP/APRN role match, no pediatric match</div>
-      <a class="apply-link" href="https://rr.jobsyn.org/881D663CE1D044D7905FDA12B6D5BC10" target="_blank" rel="noopener">View posting &rarr;</a>
-    </article>
-  
-
-    <article class="job">
-      <h3>Medical Assistant I/II or EMT-B/AEMT <span class="badge closed">Excluded</span></h3>
-      <div class="section section-details"><span class="section-label">Details</span>University of Utah Health Hospitals and Clinics &middot; SALT LAKE CITY, UT &middot; found via &quot;Clinical Research Coordinator&quot;</div>
-      
-      <div class="section section-reason"><span class="section-label">Excluded because</span>No NP/APRN role match, no pediatric match</div>
-      <a class="apply-link" href="https://rr.jobsyn.org/BA5E495EFFE14AAC85C19F9A88182711" target="_blank" rel="noopener">View posting &rarr;</a>
     </article>
   
   </details>

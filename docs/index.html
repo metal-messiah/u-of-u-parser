@@ -6,34 +6,35 @@
 <title>U of U Pediatric NP/APRN Jobs</title>
 <style>
   * { box-sizing: border-box; }
-  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 860px; margin: 2rem auto; padding: 0 1rem; color: #1a1a1a; overflow-wrap: break-word; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 860px; margin: 2rem auto; padding: 0 1rem; background: #0d1117; color: #e6edf3; overflow-wrap: break-word; }
   h1 { font-size: 1.4rem; }
-  .generated { color: #666; font-size: 0.85rem; margin-bottom: 0.5rem; }
+  .generated { color: #8b949e; font-size: 0.85rem; margin-bottom: 0.5rem; }
   .evaluated-link { display: inline-block; margin-bottom: 1.5rem; font-size: 0.85rem; }
   details summary { cursor: pointer; font-weight: 600; margin: 1.5rem 0 0.8rem; }
   
-  .job { border: 1px solid #ddd; border-radius: 8px; padding: 0.9rem 1.1rem; margin-bottom: 0.9rem; background: #fff; }
+  a { color: #6cb1ff; }
+  .job { border: 1px solid #30363d; border-radius: 8px; padding: 0.9rem 1.1rem; margin-bottom: 0.9rem; background: #161b22; }
   .job.closed { opacity: 0.6; }
-  .excluded-section { background: #f6ecec; border: 1px solid #e3caca; border-radius: 10px; padding: 0.75rem 1.1rem 1.1rem; margin-top: 1rem; }
-  .excluded-section summary { color: #7a2f2f; }
-  .excluded-section .job { border-color: #e3caca; }
-  .job h3 { margin: 0 0 0.6rem; padding-bottom: 0.5rem; font-size: 1.05rem; border-bottom: 1px solid #eee; }
-  .section { padding: 0.35rem 0.6rem; margin: 0.4rem 0; border-radius: 6px; border-left: 4px solid; font-size: 0.85rem; color: #333; }
+  .excluded-section { background: #201515; border: 1px solid #4a2e2e; border-radius: 10px; padding: 0.75rem 1.1rem 1.1rem; margin-top: 1rem; }
+  .excluded-section summary { color: #e59a9a; }
+  .excluded-section .job { border-color: #3d2828; background: #1a1212; }
+  .job h3 { margin: 0 0 0.6rem; padding-bottom: 0.5rem; font-size: 1.05rem; border-bottom: 1px solid #30363d; color: #e6edf3; }
+  .section { padding: 0.35rem 0.6rem; margin: 0.4rem 0; border-radius: 6px; border-left: 4px solid; font-size: 0.85rem; color: #cdd5dd; }
   .section-label { display: block; font-weight: 700; text-transform: uppercase; font-size: 0.65rem; letter-spacing: 0.05em; margin-bottom: 0.15rem; }
-  .section-details { background: #eef4fc; border-color: #4c7fd6; }
-  .section-details .section-label { color: #2f5aa8; }
-  .section-dates { background: #fdf3e7; border-color: #d98f2b; }
-  .section-dates .section-label { color: #a15f0d; }
-  .section-why { background: #eaf7ee; border-color: #3fa35a; }
-  .section-why .section-label { color: #227a3c; }
-  .section-reason { background: #fbeaea; border-color: #cc4b4b; }
-  .section-reason .section-label { color: #a12f2f; }
-  .apply-link { display: inline-block; margin-top: 0.5rem; padding: 0.4rem 0.85rem; background: #2f5aa8; color: #fff !important; border-radius: 6px; font-size: 0.85rem; text-decoration: none; font-weight: 600; }
-  .apply-link:hover { background: #24457f; }
+  .section-details { background: #10233c; border-color: #4c8eff; }
+  .section-details .section-label { color: #86b6ff; }
+  .section-dates { background: #362a13; border-color: #e0a030; }
+  .section-dates .section-label { color: #f0c179; }
+  .section-why { background: #113321; border-color: #3fbd6a; }
+  .section-why .section-label { color: #7fe3a0; }
+  .section-reason { background: #391414; border-color: #e05252; }
+  .section-reason .section-label { color: #ff9d9d; }
+  .apply-link { display: inline-block; margin-top: 0.5rem; padding: 0.4rem 0.85rem; background: #2f6feb; color: #fff !important; border-radius: 6px; font-size: 0.85rem; text-decoration: none; font-weight: 600; }
+  .apply-link:hover { background: #1f4fb0; }
   .badge { font-size: 0.7rem; font-weight: 600; padding: 0.1rem 0.45rem; border-radius: 4px; vertical-align: middle; }
-  .badge.new { background: #d4f7dc; color: #146c2e; }
-  .badge.updated { background: #fff3cd; color: #8a6100; }
-  .badge.closed { background: #eee; color: #666; }
+  .badge.new { background: #113321; color: #7fe3a0; }
+  .badge.updated { background: #362a13; color: #f0c179; }
+  .badge.closed { background: #262c33; color: #9aa4af; }
 
   @media (max-width: 480px) {
     body { margin: 1.25rem auto; padding: 0 0.75rem; }
@@ -47,7 +48,7 @@
 <body>
   <h1>Pediatric Nurse Practitioner / APRN Jobs &mdash; University of Utah</h1>
   <p class="generated">
-    Generated <span id="generated-time" data-utc="2026-08-28T22:25:26.315Z">Aug 28, 2026, 10:25 PM UTC</span><script>(function(){var el=document.getElementById("generated-time");if(!el)return;var d=new Date(el.getAttribute("data-utc"));if(isNaN(d))return;var dt=d.toLocaleString(undefined,{dateStyle:"medium",timeStyle:"short"});var tzParts=new Intl.DateTimeFormat(undefined,{timeZoneName:"short"}).formatToParts(d);var tz=(tzParts.find(function(p){return p.type==="timeZoneName"})||{}).value||"";el.textContent=dt+(tz?" "+tz:"");})();</script> &middot;
+    Generated <span id="generated-time" data-utc="2026-08-28T22:30:53.461Z">Aug 28, 2026, 10:30 PM UTC</span><script>(function(){var el=document.getElementById("generated-time");if(!el)return;var d=new Date(el.getAttribute("data-utc"));if(isNaN(d))return;var dt=d.toLocaleString(undefined,{dateStyle:"medium",timeStyle:"short"});var tzParts=new Intl.DateTimeFormat(undefined,{timeZoneName:"short"}).formatToParts(d);var tz=(tzParts.find(function(p){return p.type==="timeZoneName"})||{}).value||"";el.textContent=dt+(tz?" "+tz:"");})();</script> &middot;
     0 new &middot; 0 updated &middot;
     0 reopened &middot; 0 closed this run &middot;
     10 currently open

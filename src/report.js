@@ -67,9 +67,9 @@ export async function writeReport(store, runSummary) {
 <title>U of U Pediatric NP/APRN Jobs</title>
 <style>
   * { box-sizing: border-box; }
-  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 860px; margin: 2rem auto; padding: 0 1rem; color: #1a1a1a; overflow-wrap: break-word; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 860px; margin: 2rem auto; padding: 0 1rem; background: #0d1117; color: #e6edf3; overflow-wrap: break-word; }
   h1 { font-size: 1.4rem; }
-  .generated { color: #666; font-size: 0.85rem; margin-bottom: 0.5rem; }
+  .generated { color: #8b949e; font-size: 0.85rem; margin-bottom: 0.5rem; }
   .evaluated-link { display: inline-block; margin-bottom: 1.5rem; font-size: 0.85rem; }
   details summary { cursor: pointer; font-weight: 600; margin: 1.5rem 0 0.8rem; }
   ${CARD_STYLES}
