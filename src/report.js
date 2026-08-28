@@ -63,14 +63,23 @@ export async function writeReport(store, runSummary) {
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>U of U Pediatric NP/APRN Jobs</title>
 <style>
-  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 860px; margin: 2rem auto; padding: 0 1rem; color: #1a1a1a; }
+  * { box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 860px; margin: 2rem auto; padding: 0 1rem; color: #1a1a1a; overflow-wrap: break-word; }
   h1 { font-size: 1.4rem; }
   .generated { color: #666; font-size: 0.85rem; margin-bottom: 0.5rem; }
   .evaluated-link { display: inline-block; margin-bottom: 1.5rem; font-size: 0.85rem; }
   details summary { cursor: pointer; font-weight: 600; margin: 1.5rem 0 0.8rem; }
   ${CARD_STYLES}
+  @media (max-width: 480px) {
+    body { margin: 1.25rem auto; padding: 0 0.75rem; }
+    h1 { font-size: 1.2rem; }
+    .job { padding: 0.75rem 0.85rem; }
+    .job h3 { font-size: 1rem; }
+    .apply-link { display: block; text-align: center; }
+  }
 </style>
 </head>
 <body>
