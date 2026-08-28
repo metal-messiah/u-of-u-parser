@@ -1,0 +1,10 @@
+{
+  "name": "u-of-u-parser",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "description": "Tracks University of Utah pediatric Nurse Practitioner / APRN job postings over time.",
+  "scripts": {
+    "scrape": "NODE_EXTRA_CA_CERTS=$(test -f .local/ca-bundle.pem && echo .local/ca-bundle.pem) node src/scrape.js"
+  }
+}
