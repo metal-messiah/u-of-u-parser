@@ -1,5 +1,5 @@
 import { writeFile } from "node:fs/promises";
-import { escapeHtml, badge, section, renderMatchedLine, formatTimestamp, CARD_STYLES } from "./htmlUtils.js";
+import { escapeHtml, badge, section, renderMatchedLine, renderGeneratedTimestamp, CARD_STYLES } from "./htmlUtils.js";
 
 const EVALUATED_PATH = new URL("../docs/evaluated.html", import.meta.url);
 
@@ -65,7 +65,7 @@ export async function writeEvaluatedReport(evaluated) {
 <body>
   <h1>Evaluated Postings &mdash; This Run</h1>
   <p class="generated">
-    Generated ${escapeHtml(formatTimestamp())} &middot;
+    Generated ${renderGeneratedTimestamp()} &middot;
     ${evaluated.length} unique posting(s) evaluated across all search queries &middot;
     ${included.length} included &middot; ${excluded.length} excluded
   </p>

@@ -12,9 +12,10 @@ export function badge(text, className) {
   return `<span class="badge ${className}">${escapeHtml(text)}</span>`;
 }
 
-// Fixed to UTC so the timestamp reads the same whether generated on a local
-// machine or a GitHub Actions runner, rather than showing whatever timezone
-// each happens to be in.
+// Server-rendered fallback (shown until the inline script below replaces it,
+// and shown as-is if JS is unavailable). Fixed to UTC since the page is
+// generated on whatever machine/runner happens to run it — the viewer's
+// actual timezone isn't known until it renders in their browser.
 export function formatTimestamp(date = new Date()) {
   return (
     date.toLocaleString("en-US", {
@@ -22,6 +23,27 @@ export function formatTimestamp(date = new Date()) {
       timeStyle: "short",
       timeZone: "UTC",
     }) + " UTC"
+  );
+}
+
+// Renders the generated-at time in whatever timezone the viewer's own
+// browser is set to, since this is a static page that could be generated on
+// a GitHub Actions runner (UTC) but viewed anywhere.
+export function renderGeneratedTimestamp(date = new Date()) {
+  const iso = date.toISOString();
+  const fallback = formatTimestamp(date);
+  return (
+    `<span id="generated-time" data-utc="${iso}">${escapeHtml(fallback)}</span>` +
+    `<script>(function(){` +
+    `var el=document.getElementById("generated-time");` +
+    `if(!el)return;` +
+    `var d=new Date(el.getAttribute("data-utc"));` +
+    `if(isNaN(d))return;` +
+    `var dt=d.toLocaleString(undefined,{dateStyle:"medium",timeStyle:"short"});` +
+    `var tzParts=new Intl.DateTimeFormat(undefined,{timeZoneName:"short"}).formatToParts(d);` +
+    `var tz=(tzParts.find(function(p){return p.type==="timeZoneName"})||{}).value||"";` +
+    `el.textContent=dt+(tz?" "+tz:"");` +
+    `})();</script>`
   );
 }
 

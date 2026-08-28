@@ -1,5 +1,5 @@
 import { writeFile } from "node:fs/promises";
-import { escapeHtml, badge, section, renderMatchedLine, formatTimestamp, CARD_STYLES } from "./htmlUtils.js";
+import { escapeHtml, badge, section, renderMatchedLine, renderGeneratedTimestamp, CARD_STYLES } from "./htmlUtils.js";
 
 const REPORT_PATH = new URL("../docs/index.html", import.meta.url);
 
@@ -70,7 +70,7 @@ export async function writeReport(store, runSummary) {
 <body>
   <h1>Pediatric Nurse Practitioner / APRN Jobs &mdash; University of Utah</h1>
   <p class="generated">
-    Generated ${escapeHtml(formatTimestamp())} &middot;
+    Generated ${renderGeneratedTimestamp()} &middot;
     ${runSummary.added} new &middot; ${runSummary.updated} updated &middot;
     ${runSummary.reopened} reopened &middot; ${runSummary.closed} closed this run &middot;
     ${open.length} currently open
