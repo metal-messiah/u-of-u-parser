@@ -3,6 +3,10 @@ import { escapeHtml, badge, section, renderMatchedLine, renderGeneratedTimestamp
 
 const REPORT_PATH = new URL("../docs/index.html", import.meta.url);
 
+function isNursePractitionerMatch(job) {
+  return (job.matchedRoleTerms ?? []).some((term) => /nurse practitioner/i.test(term));
+}
+
 function renderJobCard(job, { isNew, isUpdated }) {
   const badges = [
     isNew ? badge("New", "new") : "",
@@ -42,9 +46,11 @@ function renderJobCard(job, { isNew, isUpdated }) {
 }
 
 export async function writeReport(store, runSummary) {
-  const jobs = Object.values(store).sort(
-    (a, b) => new Date(b.firstSeenAt) - new Date(a.firstSeenAt)
-  );
+  const jobs = Object.values(store).sort((a, b) => {
+    const npDiff = Number(isNursePractitionerMatch(b)) - Number(isNursePractitionerMatch(a));
+    if (npDiff !== 0) return npDiff;
+    return new Date(b.firstSeenAt) - new Date(a.firstSeenAt);
+  });
 
   const open = jobs.filter((j) => j.status === "open");
   const closed = jobs.filter((j) => j.status === "closed");
