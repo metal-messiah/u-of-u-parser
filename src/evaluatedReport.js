@@ -1,5 +1,5 @@
 import { writeFile } from "node:fs/promises";
-import { escapeHtml, badge, renderMatchedTerms } from "./htmlUtils.js";
+import { escapeHtml, badge, section, renderMatchedLine, formatTimestamp, CARD_STYLES } from "./htmlUtils.js";
 
 const EVALUATED_PATH = new URL("../docs/evaluated.html", import.meta.url);
 
@@ -13,25 +13,28 @@ function exclusionReason(entry) {
 }
 
 function renderEntry(entry) {
-  const meta = [entry.organization, entry.department, entry.location]
+  const details = [entry.organization, entry.department, entry.location]
     .filter(Boolean)
     .map(escapeHtml)
     .join(" &middot; ");
-
-  const matched = [
-    renderMatchedTerms("Matched role", entry.matchedRoleTerms),
-    renderMatchedTerms("Matched pediatric", entry.matchedPediatricTerms),
-  ]
+  const detailsWithSource = [details, `found via &quot;${escapeHtml(entry.foundVia)}&quot;`]
     .filter(Boolean)
     .join(" &middot; ");
 
+  const why = [
+    renderMatchedLine("Matched role", entry.matchedRoleTerms),
+    renderMatchedLine("Match term(s)", entry.matchedPediatricTerms),
+  ]
+    .filter(Boolean)
+    .join("");
+
   return `
-    <article class="job ${entry.included ? "included" : "excluded"}">
+    <article class="job">
       <h3>${escapeHtml(entry.title)} ${entry.included ? badge("Included", "new") : badge("Excluded", "closed")}</h3>
-      <p class="meta">${meta} &middot; found via "${escapeHtml(entry.foundVia)}"</p>
-      ${matched ? `<p class="why">${matched}</p>` : ""}
-      ${!entry.included ? `<p class="reason">${escapeHtml(exclusionReason(entry))}</p>` : ""}
-      ${entry.applyUrl ? `<p><a href="${escapeHtml(entry.applyUrl)}" target="_blank" rel="noopener">View posting &rarr;</a></p>` : ""}
+      ${section("details", "Details", detailsWithSource)}
+      ${section("why", "Why", why)}
+      ${!entry.included ? section("reason", "Excluded because", escapeHtml(exclusionReason(entry))) : ""}
+      ${entry.applyUrl ? `<a class="apply-link" href="${escapeHtml(entry.applyUrl)}" target="_blank" rel="noopener">View posting &rarr;</a>` : ""}
     </article>
   `;
 }
@@ -55,22 +58,14 @@ export async function writeEvaluatedReport(evaluated) {
   h1 { font-size: 1.4rem; }
   .generated { color: #666; font-size: 0.85rem; margin-bottom: 1.5rem; }
   .back-link { display: inline-block; margin-bottom: 1.5rem; font-size: 0.85rem; }
-  .job { border: 1px solid #ddd; border-radius: 8px; padding: 0.9rem 1.1rem; margin-bottom: 0.8rem; }
-  .job.excluded { opacity: 0.7; }
-  .job h3 { margin: 0 0 0.3rem; font-size: 1.05rem; }
-  .meta, .why, .reason { margin: 0.2rem 0; font-size: 0.9rem; color: #444; }
-  .why { font-size: 0.82rem; color: #555; }
-  .reason { font-size: 0.82rem; color: #a33; font-style: italic; }
-  .badge { font-size: 0.7rem; font-weight: 600; padding: 0.1rem 0.45rem; border-radius: 4px; vertical-align: middle; }
-  .badge.new { background: #d4f7dc; color: #146c2e; }
-  .badge.closed { background: #eee; color: #666; }
   details summary { cursor: pointer; font-weight: 600; margin: 1.5rem 0 0.8rem; }
+  ${CARD_STYLES}
 </style>
 </head>
 <body>
   <h1>Evaluated Postings &mdash; This Run</h1>
   <p class="generated">
-    Generated ${escapeHtml(new Date().toISOString())} &middot;
+    Generated ${escapeHtml(formatTimestamp())} &middot;
     ${evaluated.length} unique posting(s) evaluated across all search queries &middot;
     ${included.length} included &middot; ${excluded.length} excluded
   </p>
@@ -79,7 +74,7 @@ export async function writeEvaluatedReport(evaluated) {
   <h2>Included (${included.length})</h2>
   ${included.map(renderEntry).join("\n") || "<p>None.</p>"}
 
-  <details open>
+  <details open class="excluded-section">
     <summary>Excluded (${excluded.length})</summary>
     ${excluded.map(renderEntry).join("\n") || "<p>None.</p>"}
   </details>

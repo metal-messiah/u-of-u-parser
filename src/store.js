@@ -5,10 +5,23 @@ import { fileURLToPath } from "node:url";
 
 const STORE_PATH = new URL("../data/jobs.json", import.meta.url);
 
+// Fields are pulled out of the description as raw text, which still has HTML
+// entities in it (e.g. "Health &amp; Kinesiology") — decode them here so they
+// don't get double-escaped when rendered later.
+function decodeHtmlEntities(str) {
+  return str
+    .replace(/&amp;/g, "&")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&quot;/g, '"')
+    .replace(/&#0?39;/g, "'")
+    .replace(/&nbsp;/g, " ");
+}
+
 function extractField(descriptionHtml, label) {
   const match = new RegExp(`<strong>${label}</strong>\\s*([^<]*)`, "i").exec(descriptionHtml ?? "");
   const value = match?.[1]?.trim();
-  return value || null;
+  return value ? decodeHtmlEntities(value) : null;
 }
 
 function hashDescription(descriptionHtml) {

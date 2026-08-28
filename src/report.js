@@ -1,5 +1,5 @@
 import { writeFile } from "node:fs/promises";
-import { escapeHtml, badge, renderMatchedTerms } from "./htmlUtils.js";
+import { escapeHtml, badge, section, renderMatchedLine, formatTimestamp, CARD_STYLES } from "./htmlUtils.js";
 
 const REPORT_PATH = new URL("../docs/index.html", import.meta.url);
 
@@ -10,7 +10,7 @@ function renderJobCard(job, { isNew, isUpdated }) {
     job.status === "closed" ? badge("Closed", "closed") : "",
   ].join(" ");
 
-  const meta = [job.organization, job.department, job.location, job.employmentType, job.payRange]
+  const details = [job.organization, job.department, job.location, job.employmentType, job.payRange]
     .filter(Boolean)
     .map(escapeHtml)
     .join(" &middot; ");
@@ -23,20 +23,20 @@ function renderJobCard(job, { isNew, isUpdated }) {
     .filter(Boolean)
     .join(" &middot; ");
 
-  const matched = [
-    renderMatchedTerms("Matched role", job.matchedRoleTerms),
-    renderMatchedTerms("Matched pediatric", job.matchedPediatricTerms),
+  const why = [
+    renderMatchedLine("Matched role", job.matchedRoleTerms),
+    renderMatchedLine("Match term(s)", job.matchedPediatricTerms),
   ]
     .filter(Boolean)
-    .join(" &middot; ");
+    .join("");
 
   return `
     <article class="job ${job.status}">
       <h3>${escapeHtml(job.title)} ${badges}</h3>
-      <p class="meta">${meta}</p>
-      <p class="dates">${dates}</p>
-      ${matched ? `<p class="why">${matched}</p>` : ""}
-      ${job.applyUrl ? `<p><a href="${escapeHtml(job.applyUrl)}" target="_blank" rel="noopener">View / apply &rarr;</a></p>` : ""}
+      ${section("details", "Details", details)}
+      ${section("dates", "Dates", dates)}
+      ${section("why", "Why it matched", why)}
+      ${job.applyUrl ? `<a class="apply-link" href="${escapeHtml(job.applyUrl)}" target="_blank" rel="noopener">View / apply &rarr;</a>` : ""}
     </article>
   `;
 }
@@ -63,22 +63,14 @@ export async function writeReport(store, runSummary) {
   h1 { font-size: 1.4rem; }
   .generated { color: #666; font-size: 0.85rem; margin-bottom: 0.5rem; }
   .evaluated-link { display: inline-block; margin-bottom: 1.5rem; font-size: 0.85rem; }
-  .job { border: 1px solid #ddd; border-radius: 8px; padding: 0.9rem 1.1rem; margin-bottom: 0.8rem; }
-  .job.closed { opacity: 0.55; }
-  .job h3 { margin: 0 0 0.3rem; font-size: 1.05rem; }
-  .meta, .dates, .why { margin: 0.2rem 0; font-size: 0.9rem; color: #444; }
-  .why { color: #555; font-size: 0.82rem; }
-  .badge { font-size: 0.7rem; font-weight: 600; padding: 0.1rem 0.45rem; border-radius: 4px; vertical-align: middle; }
-  .badge.new { background: #d4f7dc; color: #146c2e; }
-  .badge.updated { background: #fff3cd; color: #8a6100; }
-  .badge.closed { background: #eee; color: #666; }
   details summary { cursor: pointer; font-weight: 600; margin: 1.5rem 0 0.8rem; }
+  ${CARD_STYLES}
 </style>
 </head>
 <body>
   <h1>Pediatric Nurse Practitioner / APRN Jobs &mdash; University of Utah</h1>
   <p class="generated">
-    Generated ${escapeHtml(new Date().toISOString())} &middot;
+    Generated ${escapeHtml(formatTimestamp())} &middot;
     ${runSummary.added} new &middot; ${runSummary.updated} updated &middot;
     ${runSummary.reopened} reopened &middot; ${runSummary.closed} closed this run &middot;
     ${open.length} currently open
