@@ -14,7 +14,7 @@
     "descriptionHash": "de2dbc3d2c3ec603",
     "status": "open",
     "firstSeenAt": "2026-08-28T20:41:59.318Z",
-    "lastSeenAt": "2026-08-29T20:12:56.089Z",
+    "lastSeenAt": "2026-08-29T20:21:37.599Z",
     "updatedAt": null,
     "closedAt": null,
     "matchedRoleTerms": [
@@ -30,7 +30,10 @@
     "matchedResumeAffinityTerms": [
       "Newborn"
     ],
-    "matchScore": 53.5
+    "matchScore": 53.5,
+    "shift": "Variable",
+    "workScheduleSummary": null,
+    "matchedBonusTerms": []
   },
   "PRN03993F": {
     "reqid": "PRN03993F",
@@ -47,7 +50,7 @@
     "descriptionHash": "d0571a52123f36f1",
     "status": "open",
     "firstSeenAt": "2026-08-28T20:41:59.318Z",
-    "lastSeenAt": "2026-08-29T20:12:56.089Z",
+    "lastSeenAt": "2026-08-29T20:21:37.599Z",
     "updatedAt": null,
     "closedAt": null,
     "matchedRoleTerms": [
@@ -63,7 +66,10 @@
       "Acute Care",
       "DNP"
     ],
-    "matchScore": 53
+    "matchScore": 53,
+    "shift": null,
+    "workScheduleSummary": null,
+    "matchedBonusTerms": []
   },
   "PRN17193N": {
     "reqid": "PRN17193N",
@@ -80,7 +86,7 @@
     "descriptionHash": "040ff27251361c9f",
     "status": "open",
     "firstSeenAt": "2026-08-28T20:41:59.318Z",
-    "lastSeenAt": "2026-08-29T20:12:56.089Z",
+    "lastSeenAt": "2026-08-29T20:21:37.599Z",
     "updatedAt": null,
     "closedAt": null,
     "matchedRoleTerms": [
@@ -94,7 +100,12 @@
     "matchedResumeAffinityTerms": [
       "primary care"
     ],
-    "matchScore": 51.5
+    "matchScore": 54.5,
+    "shift": "Day",
+    "workScheduleSummary": null,
+    "matchedBonusTerms": [
+      "Day shift"
+    ]
   },
   "PRN03995F": {
     "reqid": "PRN03995F",
@@ -111,7 +122,7 @@
     "descriptionHash": "f02f5121a7789eb0",
     "status": "open",
     "firstSeenAt": "2026-08-28T20:41:59.318Z",
-    "lastSeenAt": "2026-08-29T20:12:56.089Z",
+    "lastSeenAt": "2026-08-29T20:21:37.599Z",
     "updatedAt": null,
     "closedAt": null,
     "matchedRoleTerms": [
@@ -127,7 +138,10 @@
       "Primary Care",
       "DNP"
     ],
-    "matchScore": 53
+    "matchScore": 53,
+    "shift": null,
+    "workScheduleSummary": null,
+    "matchedBonusTerms": []
   },
   "PRN45948B": {
     "reqid": "PRN45948B",
@@ -144,7 +158,7 @@
     "descriptionHash": "db8e901d3245e89d",
     "status": "open",
     "firstSeenAt": "2026-08-28T20:41:59.318Z",
-    "lastSeenAt": "2026-08-29T20:12:56.089Z",
+    "lastSeenAt": "2026-08-29T20:21:37.599Z",
     "updatedAt": null,
     "closedAt": null,
     "matchedRoleTerms": [
@@ -161,7 +175,10 @@
     "matchedResumeAffinityTerms": [
       "Newborn"
     ],
-    "matchScore": 54.5
+    "matchScore": 54.5,
+    "shift": "Variable",
+    "workScheduleSummary": null,
+    "matchedBonusTerms": []
   },
   "PRN46035B": {
     "reqid": "PRN46035B",
@@ -178,7 +195,7 @@
     "descriptionHash": "9bd2a63e29ec2340",
     "status": "open",
     "firstSeenAt": "2026-08-28T20:41:59.318Z",
-    "lastSeenAt": "2026-08-29T20:12:56.089Z",
+    "lastSeenAt": "2026-08-29T20:21:37.599Z",
     "updatedAt": null,
     "closedAt": null,
     "matchedRoleTerms": [
@@ -193,7 +210,10 @@
       "ED",
       "outpatient"
     ],
-    "matchScore": 52
+    "matchScore": 52,
+    "shift": "Variable",
+    "workScheduleSummary": null,
+    "matchedBonusTerms": []
   },
   "PRN45774B": {
     "reqid": "PRN45774B",
@@ -210,7 +230,7 @@
     "descriptionHash": "8b6ec330eb5397ab",
     "status": "open",
     "firstSeenAt": "2026-08-28T20:41:59.318Z",
-    "lastSeenAt": "2026-08-29T20:12:56.089Z",
+    "lastSeenAt": "2026-08-29T20:21:37.599Z",
     "updatedAt": null,
     "closedAt": null,
     "matchedRoleTerms": [
@@ -227,7 +247,12 @@
       "primary care",
       "outpatient"
     ],
-    "matchScore": 54
+    "matchScore": 57,
+    "shift": "Day",
+    "workScheduleSummary": null,
+    "matchedBonusTerms": [
+      "Day shift"
+    ]
   },
   "PRN45544B": {
     "reqid": "PRN45544B",
@@ -253,11 +278,16 @@
     "foundVia": "nurse practitioner",
     "status": "open",
     "firstSeenAt": "2026-08-28T21:36:11.798Z",
-    "lastSeenAt": "2026-08-29T20:12:56.089Z",
+    "lastSeenAt": "2026-08-29T20:21:37.599Z",
     "updatedAt": null,
     "closedAt": null,
     "matchedResumeAffinityTerms": [],
-    "matchScore": 12
+    "matchScore": 15,
+    "shift": "Day",
+    "workScheduleSummary": null,
+    "matchedBonusTerms": [
+      "Day shift"
+    ]
   },
   "PRN46034B": {
     "reqid": "PRN46034B",
@@ -283,11 +313,16 @@
     "foundVia": "Clinical Research Coordinator",
     "status": "open",
     "firstSeenAt": "2026-08-28T21:36:11.798Z",
-    "lastSeenAt": "2026-08-29T20:12:56.089Z",
+    "lastSeenAt": "2026-08-29T20:21:37.599Z",
     "updatedAt": null,
     "closedAt": null,
     "matchedResumeAffinityTerms": [],
-    "matchScore": 12
+    "matchScore": 15,
+    "shift": "Day",
+    "workScheduleSummary": null,
+    "matchedBonusTerms": [
+      "Day shift"
+    ]
   },
   "PRN45716B": {
     "reqid": "PRN45716B",
@@ -313,11 +348,16 @@
     "foundVia": "Care Coordinator",
     "status": "open",
     "firstSeenAt": "2026-08-28T21:36:11.798Z",
-    "lastSeenAt": "2026-08-29T20:12:56.089Z",
+    "lastSeenAt": "2026-08-29T20:21:37.599Z",
     "updatedAt": null,
     "closedAt": null,
     "matchedResumeAffinityTerms": [],
-    "matchScore": 12
+    "matchScore": 15,
+    "shift": "Day",
+    "workScheduleSummary": null,
+    "matchedBonusTerms": [
+      "Day shift"
+    ]
   },
   "PRN03941F": {
     "reqid": "PRN03941F",
@@ -343,13 +383,16 @@
     "foundVia": "nurse practitioner",
     "status": "open",
     "firstSeenAt": "2026-08-28T22:44:32.973Z",
-    "lastSeenAt": "2026-08-29T20:12:56.089Z",
+    "lastSeenAt": "2026-08-29T20:21:37.599Z",
     "updatedAt": null,
     "closedAt": null,
     "matchedResumeAffinityTerms": [
       "Acute Care",
       "DNP"
     ],
-    "matchScore": 43
+    "matchScore": 43,
+    "shift": null,
+    "workScheduleSummary": null,
+    "matchedBonusTerms": []
   }
 }

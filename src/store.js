@@ -46,6 +46,8 @@ export function normalizeJob(entry) {
     department: extractField(description, "Department"),
     payRange: extractField(description, "Pay Rate Range"),
     employmentType: extractField(description, "Full Time or Part Time\\?"),
+    shift: extractField(description, "Shift"),
+    workScheduleSummary: extractField(description, "Work Schedule Summary"),
     openDate: extractField(description, "Open Date"),
     closeDate: extractField(description, "Close Date"),
     applyUrl: job.applicationInfo?.uris?.[0] ?? null,

@@ -91,6 +91,8 @@ export const CARD_STYLES = `
   .section-why .section-label { color: #7fe3a0; }
   .section-reason { background: #391414; border-color: #e05252; }
   .section-reason .section-label { color: #ff9d9d; }
+  .section-bonus { background: #2a1a3d; border-color: #a06ee0; }
+  .section-bonus .section-label { color: #cba3f0; }
   .apply-link { display: inline-block; margin-top: 0.5rem; padding: 0.4rem 0.85rem; background: #2f6feb; color: #fff !important; border-radius: 6px; font-size: 0.85rem; text-decoration: none; font-weight: 600; }
   .apply-link:hover { background: #1f4fb0; }
   .badge { font-size: 0.7rem; font-weight: 600; padding: 0.1rem 0.45rem; border-radius: 4px; vertical-align: middle; }

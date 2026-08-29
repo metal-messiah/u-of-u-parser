@@ -171,17 +171,55 @@ export function matchResumeAffinityTerms(title, description) {
   return collectMatches(text, RESUME_AFFINITY_PATTERNS);
 }
 
+// Lifestyle perks worth a real boost, independent of pediatric/role fit:
+// day shift (checked against the site's own structured "Shift" field, not
+// free text — more reliable), a compressed full-time schedule (fewer than
+// 5 days/week), and procedural work/assisting with procedures.
+const COMPRESSED_SCHEDULE_PATTERNS = [
+  /compressed/i,
+  /\d\s*x\s*(10|12)\b/i,
+  /(three|four|3|4)[\s-]*(10|12)[- ]?hour/i,
+  /\b(3|4)([\s–-]\d)?\s+days?\s+per\s+week/i,
+];
+const PROCEDURAL_PATTERNS = [/procedural/i, /assist(s|ing)?\s+(with\s+)?(procedures|physicians)/i, /image[- ]guided/i];
+
+function isCompressedFullTimeSchedule(job) {
+  if (!/full.?time/i.test(job.employmentType ?? "")) return false;
+  const text = `${job.workScheduleSummary ?? ""} ${stripHtml(job.description)}`;
+  return COMPRESSED_SCHEDULE_PATTERNS.some((p) => p.test(text));
+}
+
+function isDayShift(job) {
+  return /^day$/i.test((job.shift ?? "").trim());
+}
+
+function isProcedural(job) {
+  const text = `${job.title ?? ""} ${stripHtml(job.description)}`;
+  return PROCEDURAL_PATTERNS.some((p) => p.test(text));
+}
+
+/** Returns the lifestyle-perk labels a posting qualifies for, or []. */
+export function matchBonusTerms(job) {
+  const bonuses = [];
+  if (isDayShift(job)) bonuses.push("Day shift");
+  if (isProcedural(job)) bonuses.push("Procedural / assists with procedures");
+  if (isCompressedFullTimeSchedule(job)) bonuses.push("Full-time, condensed schedule");
+  return bonuses;
+}
+
 /**
- * Combines role tier, pediatric-term richness, and specialty-area overlap
- * into a single sortable score. Role tier is weighted an order of magnitude
- * above the others so it always dominates: any NP posting outranks any
- * Clinical Research Coordinator posting regardless of term counts.
+ * Combines role tier, pediatric-term richness, specialty-area overlap, and
+ * lifestyle-perk bonuses into a single sortable score. Role tier is weighted
+ * an order of magnitude above the others so it always dominates: any NP
+ * posting outranks any Clinical Research Coordinator posting regardless of
+ * term counts or perks.
  */
-export function scoreMatch({ matchedRoleTerms, matchedPediatricTerms, matchedResumeAffinityTerms }) {
+export function scoreMatch({ matchedRoleTerms, matchedPediatricTerms, matchedResumeAffinityTerms, matchedBonusTerms }) {
   return (
     roleWeight(matchedRoleTerms ?? []) * 10 +
     (matchedPediatricTerms?.length ?? 0) +
-    (matchedResumeAffinityTerms?.length ?? 0) * 0.5
+    (matchedResumeAffinityTerms?.length ?? 0) * 0.5 +
+    (matchedBonusTerms?.length ?? 0) * 3
   );
 }
 

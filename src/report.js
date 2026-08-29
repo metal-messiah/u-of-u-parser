@@ -41,12 +41,15 @@ function renderJobCard(job, { isNew, isUpdated }) {
     .filter(Boolean)
     .join("");
 
+  const bonus = (job.matchedBonusTerms ?? []).map((b) => `<div>${escapeHtml(b)}</div>`).join("");
+
   return `
     <article class="job ${job.status}">
       <h3>${escapeHtml(job.title)} ${badges}</h3>
       ${section("details", "Details", details)}
       ${section("dates", "Dates", dates)}
       ${section("why", "Why it matched", why)}
+      ${section("bonus", "Bonus", bonus)}
       ${job.applyUrl ? `<a class="apply-link" href="${escapeHtml(job.applyUrl)}" target="_blank" rel="noopener">View / apply &rarr;</a>` : ""}
     </article>
   `;
