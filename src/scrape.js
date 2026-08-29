@@ -21,7 +21,7 @@ async function evaluateCandidates() {
       const job = normalizeJob(entry);
       if (!job.reqid || evaluated.has(job.reqid)) continue;
 
-      const matchedRoleTerms = matchRoleTerms(job.title);
+      const matchedRoleTerms = matchRoleTerms(job.title, job.department);
       const matchedPediatricTerms = matchPediatricTerms(job.title, job.description);
       const included = matchedRoleTerms.length > 0 && matchedPediatricTerms.length > 0;
 

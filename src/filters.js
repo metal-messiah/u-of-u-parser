@@ -21,6 +21,8 @@ export const SEARCH_QUERIES = [
   "Utilization Review",
   "Clinical Research Coordinator",
   "Nurse Navigator",
+  "Professor",
+  "Faculty",
 ];
 
 // Matched against the job TITLE only (not the description) — U of U Health
@@ -46,6 +48,15 @@ const ROLE_PATTERNS = [
   /nurse navigator/i,
   /nurse consultant/i,
 ];
+
+// "Professor"/"Faculty"/"Instructor" on their own would pull in a flood of
+// physician-only academic postings (this is a medical school). They only
+// count as NP-relevant when the posting is specifically within the College
+// of Nursing — checked separately via the department code, since title alone
+// can't distinguish "Assistant Professor (Clinical)" in Surgery from the
+// same title in the College of Nursing.
+const ACADEMIC_TITLE_PATTERNS = [/professor/i, /\bfaculty\b/i, /\binstructor\b/i, /\blecturer\b/i, /endowed chair/i];
+const COLLEGE_OF_NURSING_DEPT = /\bCON\b/;
 
 // PNP (Pediatric Nurse Practitioner) is itself a pediatric signal, so a title
 // that's just "PNP" with no other pediatric wording should still count.
@@ -92,9 +103,22 @@ function collectMatches(text, patterns) {
   return [...matches];
 }
 
-/** Returns the actual substrings of the title that indicate an NP/APRN-adjacent role, or []. */
-export function matchRoleTerms(title) {
-  return collectMatches(title ?? "", ROLE_PATTERNS);
+/**
+ * Returns the actual substrings of the title that indicate an NP/APRN-adjacent
+ * role, or []. Academic titles (Professor/Faculty/Instructor/Lecturer) only
+ * count when `department` shows the posting is within the College of Nursing
+ * (dept code "CON") — otherwise this would match physician faculty postings
+ * that have nothing to do with nurse practitioners.
+ */
+export function matchRoleTerms(title, department) {
+  const direct = collectMatches(title ?? "", ROLE_PATTERNS);
+  if (direct.length) return direct;
+
+  const isAcademicTitle = ACADEMIC_TITLE_PATTERNS.some((pattern) => pattern.test(title ?? ""));
+  const isNursingDept = COLLEGE_OF_NURSING_DEPT.test(department ?? "");
+  if (isAcademicTitle && isNursingDept) return ["Nursing faculty (College of Nursing)"];
+
+  return [];
 }
 
 /** Returns the actual substrings (from title or description) that indicate pediatrics, or []. */

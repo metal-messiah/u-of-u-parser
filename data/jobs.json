@@ -14,7 +14,7 @@
     "descriptionHash": "de2dbc3d2c3ec603",
     "status": "open",
     "firstSeenAt": "2026-08-28T20:41:59.318Z",
-    "lastSeenAt": "2026-08-28T22:30:53.458Z",
+    "lastSeenAt": "2026-08-28T22:44:32.973Z",
     "updatedAt": null,
     "closedAt": null,
     "matchedRoleTerms": [
@@ -43,7 +43,7 @@
     "descriptionHash": "d0571a52123f36f1",
     "status": "open",
     "firstSeenAt": "2026-08-28T20:41:59.318Z",
-    "lastSeenAt": "2026-08-28T22:30:53.458Z",
+    "lastSeenAt": "2026-08-28T22:44:32.973Z",
     "updatedAt": null,
     "closedAt": null,
     "matchedRoleTerms": [
@@ -71,7 +71,7 @@
     "descriptionHash": "040ff27251361c9f",
     "status": "open",
     "firstSeenAt": "2026-08-28T20:41:59.318Z",
-    "lastSeenAt": "2026-08-28T22:30:53.458Z",
+    "lastSeenAt": "2026-08-28T22:44:32.973Z",
     "updatedAt": null,
     "closedAt": null,
     "matchedRoleTerms": [
@@ -98,7 +98,7 @@
     "descriptionHash": "f02f5121a7789eb0",
     "status": "open",
     "firstSeenAt": "2026-08-28T20:41:59.318Z",
-    "lastSeenAt": "2026-08-28T22:30:53.458Z",
+    "lastSeenAt": "2026-08-28T22:44:32.973Z",
     "updatedAt": null,
     "closedAt": null,
     "matchedRoleTerms": [
@@ -126,7 +126,7 @@
     "descriptionHash": "db8e901d3245e89d",
     "status": "open",
     "firstSeenAt": "2026-08-28T20:41:59.318Z",
-    "lastSeenAt": "2026-08-28T22:30:53.458Z",
+    "lastSeenAt": "2026-08-28T22:44:32.973Z",
     "updatedAt": null,
     "closedAt": null,
     "matchedRoleTerms": [
@@ -156,7 +156,7 @@
     "descriptionHash": "9bd2a63e29ec2340",
     "status": "open",
     "firstSeenAt": "2026-08-28T20:41:59.318Z",
-    "lastSeenAt": "2026-08-28T22:30:53.458Z",
+    "lastSeenAt": "2026-08-28T22:44:32.973Z",
     "updatedAt": null,
     "closedAt": null,
     "matchedRoleTerms": [
@@ -183,7 +183,7 @@
     "descriptionHash": "8b6ec330eb5397ab",
     "status": "open",
     "firstSeenAt": "2026-08-28T20:41:59.318Z",
-    "lastSeenAt": "2026-08-28T22:30:53.458Z",
+    "lastSeenAt": "2026-08-28T22:44:32.973Z",
     "updatedAt": null,
     "closedAt": null,
     "matchedRoleTerms": [
@@ -221,7 +221,7 @@
     "foundVia": "nurse practitioner",
     "status": "open",
     "firstSeenAt": "2026-08-28T21:36:11.798Z",
-    "lastSeenAt": "2026-08-28T22:30:53.458Z",
+    "lastSeenAt": "2026-08-28T22:44:32.973Z",
     "updatedAt": null,
     "closedAt": null
   },
@@ -249,7 +249,7 @@
     "foundVia": "APP",
     "status": "open",
     "firstSeenAt": "2026-08-28T21:36:11.798Z",
-    "lastSeenAt": "2026-08-28T22:30:53.458Z",
+    "lastSeenAt": "2026-08-28T22:44:32.973Z",
     "updatedAt": null,
     "closedAt": null
   },
@@ -277,7 +277,35 @@
     "foundVia": "Care Coordinator",
     "status": "open",
     "firstSeenAt": "2026-08-28T21:36:11.798Z",
-    "lastSeenAt": "2026-08-28T22:30:53.458Z",
+    "lastSeenAt": "2026-08-28T22:44:32.973Z",
+    "updatedAt": null,
+    "closedAt": null
+  },
+  "PRN03941F": {
+    "reqid": "PRN03941F",
+    "title": "Career-line Faculty Positions - Division of Graduate Education & Advanced Practice",
+    "organization": "University of Utah",
+    "location": "Salt Lake City, UT",
+    "department": "00989 - CON - GEAP DIVISION",
+    "payRange": null,
+    "employmentType": null,
+    "openDate": "11/07/2025",
+    "closeDate": null,
+    "applyUrl": "https://rr.jobsyn.org/4C1D7326692841689102B488BC5A598D",
+    "description": "<p>Position Information</p>\n\n<p><strong>Position/Rank</strong> Career-line Faculty Positions - Division of Graduate Education &amp; Advanced Practice</p>\n\n<p><strong>Department</strong> 00989 - CON - GEAP DIVISION</p>\n\n<p><strong>City</strong> Salt Lake City, UT</p>\n\n<p><strong>Track</strong> Non Tenure Track</p>\n\n<p><strong>New Position to Begin</strong> When filled</p>\n\n<p><strong>Details</strong></p>\n\n<p><strong>Career-line Faculty Positions</strong></p>\n\n<p><strong>Rank Dependent on Qualifications</strong></p>\n\n<p><strong>Division of Graduate Education and Advanced Practice ( GEAP )</strong></p>\n\n<p>The University of Utah College of Nursing ( CON ) seeks full-time (1.0 FTE ) experienced Registered Advanced Practice Registered Nurses ( APRN ) to serve as Career-line faculty members with the ability to teach in the Doctor of Nursing practice ( DNP ) program. Rank dependent on qualifications.</p>\n\n<p><strong>Principal Functions and Responsibilities:</strong> Teaching responsibilities within the graduate specialty tracks may include teaching didactic content in classroom and/or online settings, supervising students in clinical settings, and facilitating simulation-based instruction. Teaching assignments will depend upon the candidate’s highest earned nursing degree, teaching experience, clinical background, certifications, and teaching needs within the College.</p>\n\n<p>Faculty will be expected to contribute to program development, write or revise curriculum, serve on college committees, and participate in professional activities/service. Development of clinically focused scholarship is expected for retention and academic promotion.</p>\n\n<p><strong>Criteria:</strong> Candidates must be graduates of an accredited college or school of nursing and hold a current Utah APRN license or be qualified for licensure in the State of Utah. Utah is a Nurse Licensure Compact state. Applicants must have a master’s degree in either Nursing or a health-related field and a Doctor of Philosophy (PhD) or Doctor of Nursing Practice ( DNP ) degree.Teaching experience, including teaching in classroom, clinical, and simulation settings, is preferred. Relevant health care experience, evidence of established clinical expertise, and strong organizational and communication skills are required. Clinical expertise as a Family Nurse Practitioner in Family, Acute Care Pediatric Nurse Practitioner, or Neonatal Nurse Practitioner are desired. Excellent interpersonal skills and the ability to work effectively with patients and other members of the health care and academic team are essential. Applicants must be willing to reside in the state of Utah, and work on-site at the College of Nursing and/or at health care facilities in the Salt Lake Valley.</p>\n\n<p><strong>The College of Nursing:</strong> The CON is an integral part of University of Utah Health. We are committed to working together to serve the people of Utah and beyond by continually improving individual and community health and quality of life. We strive for excellence in education, research, and clinical care, with each mission being vital to the others and to our overall success. Comprehensiveness, independent inquiry, and collegiality form the fabric of everyday life for faculty and students. Please visit the<strong>College of Nursing website</strong>to learn more about the College.</p>\n\n<p><strong>The University of Utah:</strong> The University of Utah is a BIG 12 institution located in Salt Lake City nestled in the foothills of the Wasatch Mountains. Please visit the following webpages for more information about the**University of Utah,<strong>Faculty Careers at the University of Utah,<strong>and</strong>Living inUtah.</strong></p>\n\n<p><strong>Application:</strong> Interested candidate should apply online at</p>\n\n<p><strong>https://utah.peopleadmin.com/postings/189684</strong>.</p>\n\n<p><strong>The application requires</strong> : 1) curriculum vitae 2) cover letter 3) teaching philosophy, and 4) three letters of recommendation from individuals <em>external</em> to the University of Utah and U of U Health. Please note that letters must be signed, dated, and on letterhead.</p>\n\n<p>For additional information, please contact Dr. Sheila Deyette, Career-line Search Committee Chair<strong>Sheila.deyette@nurs.utah.edu</strong>or Cami Zollinger, Faculty Affairs and Division Services Manager at<strong>cami.zollinger@nurs.utah.edu</strong>.</p>\n\n<p>The University of Utah Health (U of U Health) is a patient focused center distinguished by collaboration, excellence, leadership, and respect. The U of U Health values candidates who are committed to fostering and furthering the culture of compassion, collaboration, innovation, accountability, acceptance, integrity, quality, and trust that is integral to our mission.</p>\n\n<p><strong>EEO/Non-Discrimination Information</strong></p>\n\n<p>The University of Utah values candidates who have experience working in settings with students and possess a strong commitment to improving access to higher education.</p>\n\n<p>Veterans’ preference is extended to qualified applicants, upon request and consistent with University policy and Utah state law. Upon request, reasonable accommodations in the application process will be provided to individuals with disabilities.</p>\n\n<p>Consistent with state and federal law, the University of Utah does not discriminate based upon race, ethnicity, color, religion, national origin, age, disability, sex, sexual orientation, gender, gender identity, gender expression, pregnancy, pregnancy-related conditions, genetic information, or protected veteran’s status. The University does not discriminate on the basis of sex in the education program or activity that it operates, as required by Title IX and 34 CFR part 106. The requirement not to discriminate in education programs or activities extends to admission and employment. Inquiries about the application of Title IX and its regulations may be referred to the Title IX Coordinator, to the Department of Education, Office for Civil Rights, or both.</p>\n\n<p>To request a reasonable accommodation for a disability or if you or someone you know has experienced discrimination or sexual misconduct including sexual harassment, you may contact the Director/Title IX Coordinator in the Office of Equal Opportunity and Title IX ( OEO ). More information, including the Director/Title IX Coordinator’s office address, electronic mail address, and telephone number, can be located athttps://www.utah.edu/nondiscrimination/.</p>\n\n<p>Online reports may be submitted athttps://oeo.utah.edu.</p>\n\n<p><strong>Notice</strong></p>\n\n<p>The University is a participating employer with Utah Retirement Systems (“URS”). Eligible new hires with prior URS service, may elect to enroll in URS if they make the election before they become eligible for retirement (usually the first day of work). Contact Human Resources at (801) 581-7447 for information. Individuals who previously retired and are receiving monthly retirement benefits from URS are subject to URS’ post-retirement rules and restrictions. Please contact Utah Retirement Systems at (801) 366-7770 or (800) 695-4877 or University Human Resource Management at (801) 581-7447 if you have questions regarding the post-retirement rules.</p>\n\n<p>This position may require the successful completion of a criminal background check and/or drug screen.</p>\n\n<p>https://publicsafety.utah.edu/safetyreport/This report includes statistics about criminal offenses, hate crimes, arrests and referrals for disciplinary action, and Violence Against Women Act offenses. They also provide information about safety and security-related services offered by the University of Utah. A paper copy can be obtained by request at the Department of Public Safety located at 1658 East 500 South.</p>\n\n<p><strong>Special Instructions for Candidates</strong></p>\n\n<p><strong>Open Date</strong> 11/07/2025</p>\n\n<p><strong>Close Date</strong></p>\n\n<p><strong>Open Until Filled</strong> Yes</p>\n\n<p><strong>Requisition Number</strong> PRN03941F</p>\n\n<p><strong>Type</strong> Faculty</p>",
+    "descriptionHash": "606b5de4070bdfe1",
+    "matchedRoleTerms": [
+      "Nursing faculty (College of Nursing)"
+    ],
+    "matchedPediatricTerms": [
+      "Pediatric",
+      "Neonatal"
+    ],
+    "included": true,
+    "foundVia": "nurse practitioner",
+    "status": "open",
+    "firstSeenAt": "2026-08-28T22:44:32.973Z",
+    "lastSeenAt": "2026-08-28T22:44:32.973Z",
     "updatedAt": null,
     "closedAt": null
   }
