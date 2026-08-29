@@ -20,7 +20,14 @@ posting evaluated this run, included or excluded, and why).
 
 ## Automated runs
 
-`.github/workflows/scrape.yml` runs this hourly via GitHub Actions and
-commits any changes back to the repo. GitHub Pages serves `docs/` so the
-report stays up to date without any manual step. Trigger it on demand from
-the Actions tab ("Run workflow").
+`.github/workflows/scrape.yml` is scheduled hourly (`17 * * * *`) via GitHub
+Actions and commits any changes back to the repo. GitHub Pages serves `docs/`
+so the report stays up to date without any manual step.
+
+In practice it runs every few hours, not hourly — GitHub does not guarantee
+timing on `schedule:` triggers, and scheduled runs on a low-traffic repo sit
+in a low-priority queue that's regularly delayed several hours beyond the
+cron time. This is a platform limitation, not a misconfiguration, and isn't
+worth working around since job postings don't change fast enough for the gap
+to matter. Trigger it immediately on demand from the Actions tab ("Run
+workflow") or with `gh workflow run scrape.yml`.

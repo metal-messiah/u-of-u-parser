@@ -1,3 +1,13 @@
+// New Relic Browser Agent — intentionally pointed at the staging beacon
+// rather than production. Lives in source (not hand-edited into the
+// generated HTML) so it survives every `npm run scrape` regeneration.
+export const NEW_RELIC_SNIPPET = `<script type="text/javascript">
+  ;window.NREUM||(NREUM={});NREUM.init={browser_consent_mode:{enabled:false},privacy:{cookies_enabled:true},session_replay:{enabled:true,block_selector:'',mask_text_selector:'*',sampling_rate:100.0,error_sampling_rate:100.0,mask_all_inputs:true,collect_fonts:true,inline_images:false,inline_stylesheet:true,fix_stylesheets:true,preload:false,mask_input_options:{}},distributed_tracing:{enabled:true},performance:{capture_measures:true},ajax:{deny_list:["staging-bam-cell.nr-data.net"],capture_payloads:'none'}};
+  ;NREUM.loader_config={accountID:"550352",trustKey:"1",agentID:"345683485",licenseKey:"NRBR-e61e490de4259bb2686",applicationID:"345683485"};
+  ;NREUM.info={beacon:"staging-bam-cell.nr-data.net",errorBeacon:"staging-bam-cell.nr-data.net",licenseKey:"NRBR-e61e490de4259bb2686",applicationID:"345683485",sa:1};
+</script>
+<script src="https://js-agent.newrelic.com/nr-loader-spa-1.x.x.min.js" type="text/javascript"></script>`;
+
 export function escapeHtml(str) {
   return (str ?? "").replace(/[&<>"']/g, (c) => ({
     "&": "&amp;",
@@ -87,4 +97,8 @@ export const CARD_STYLES = `
   .badge.new { background: #113321; color: #7fe3a0; }
   .badge.updated { background: #362a13; color: #f0c179; }
   .badge.closed { background: #262c33; color: #9aa4af; }
+  .badge.fit-great { background: #1b2f6b; color: #a9c2ff; }
+  .badge.fit-good { background: #10233c; color: #86b6ff; }
+  .badge.fit-fair { background: #362a13; color: #e3ad5f; }
+  .badge.fit-possible { background: #262c33; color: #9aa4af; }
 `;

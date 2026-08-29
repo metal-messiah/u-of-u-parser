@@ -1,14 +1,20 @@
 import { writeFile } from "node:fs/promises";
-import { escapeHtml, badge, section, renderMatchedLine, renderGeneratedTimestamp, CARD_STYLES } from "./htmlUtils.js";
+import { escapeHtml, badge, section, renderMatchedLine, renderGeneratedTimestamp, CARD_STYLES, NEW_RELIC_SNIPPET } from "./htmlUtils.js";
+import { fitLabel } from "./filters.js";
 
 const REPORT_PATH = new URL("../docs/index.html", import.meta.url);
 
-function isNursePractitionerMatch(job) {
-  return (job.matchedRoleTerms ?? []).some((term) => /nurse practitioner/i.test(term));
-}
+const FIT_BADGE_CLASS = {
+  "Great fit": "fit-great",
+  "Good fit": "fit-good",
+  "Fair fit": "fit-fair",
+  "Possible fit": "fit-possible",
+};
 
 function renderJobCard(job, { isNew, isUpdated }) {
+  const fit = fitLabel(job.matchedRoleTerms);
   const badges = [
+    badge(fit, FIT_BADGE_CLASS[fit]),
     isNew ? badge("New", "new") : "",
     isUpdated ? badge("Updated", "updated") : "",
     job.status === "closed" ? badge("Closed", "closed") : "",
@@ -30,6 +36,7 @@ function renderJobCard(job, { isNew, isUpdated }) {
   const why = [
     renderMatchedLine("Matched role", job.matchedRoleTerms),
     renderMatchedLine("Match term(s)", job.matchedPediatricTerms),
+    renderMatchedLine("Specialty overlap", job.matchedResumeAffinityTerms),
   ]
     .filter(Boolean)
     .join("");
@@ -47,8 +54,8 @@ function renderJobCard(job, { isNew, isUpdated }) {
 
 export async function writeReport(store, runSummary) {
   const jobs = Object.values(store).sort((a, b) => {
-    const npDiff = Number(isNursePractitionerMatch(b)) - Number(isNursePractitionerMatch(a));
-    if (npDiff !== 0) return npDiff;
+    const scoreDiff = (b.matchScore ?? 0) - (a.matchScore ?? 0);
+    if (scoreDiff !== 0) return scoreDiff;
     return new Date(b.firstSeenAt) - new Date(a.firstSeenAt);
   });
 
@@ -62,6 +69,7 @@ export async function writeReport(store, runSummary) {
   const html = `<!doctype html>
 <html lang="en">
 <head>
+${NEW_RELIC_SNIPPET}
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>U of U Pediatric NP/APRN Jobs</title>

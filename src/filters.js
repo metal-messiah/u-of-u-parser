@@ -126,3 +126,70 @@ export function matchPediatricTerms(title, description) {
   const text = stripCertificationBoilerplate(`${title ?? ""} ${stripHtml(description)}`);
   return collectMatches(text, PEDIATRIC_PATTERNS);
 }
+
+// --- Match scoring -----------------------------------------------------
+//
+// Ranks how close a posting is to a "perfect match" for a dual-certified
+// Pediatric NP (Acute Care/Primary Care) — not just whether it clears the
+// role+pediatric bar, but how strong a fit it is. Role type dominates the
+// score (a direct NP posting always outranks a Clinical Research
+// Coordinator posting), with pediatric-term richness and specialty-area
+// overlap as finer-grained tiebreakers within and near a tier.
+const CORE_NP_PATTERN = /nurse practitioner|\baprn\b|advanced practice provider|advanced practice clinician|\b[A-Za-z]{0,4}NP\b/i;
+const CLINICAL_RESEARCH_PATTERN = /clinical research/i;
+
+function roleWeight(matchedRoleTerms) {
+  if (matchedRoleTerms.some((t) => CORE_NP_PATTERN.test(t))) return 5; // direct NP/APRN posting
+  if (matchedRoleTerms.some((t) => /nursing faculty/i.test(t))) return 4; // College of Nursing faculty/adjunct
+  if (matchedRoleTerms.some((t) => CLINICAL_RESEARCH_PATTERN.test(t))) return 1; // lowest tier, but still acceptable
+  if (matchedRoleTerms.length) return 2; // other adjacent nursing roles (case manager, educator, etc.)
+  return 0;
+}
+
+// Specialty areas from the specific candidate's background (acute + primary
+// care pediatric NP, ED, interventional radiology/fluoroscopy, procedural
+// care, DNP-level practice) — a posting that overlaps these is a better fit
+// for THIS candidate than a generically pediatric one.
+const RESUME_AFFINITY_PATTERNS = [
+  /acute care/i,
+  /primary care/i,
+  /emergency department/i,
+  /\bed\b/i,
+  /interventional radiology/i,
+  /fluoroscop/i,
+  /procedural/i,
+  /case management/i,
+  /\bdnp\b/i,
+  /dual.certif/i,
+  /outpatient/i,
+  /newborn/i,
+];
+
+/** Returns the substrings matching this candidate's specific specialty background, or []. */
+export function matchResumeAffinityTerms(title, description) {
+  const text = `${title ?? ""} ${stripHtml(description)}`;
+  return collectMatches(text, RESUME_AFFINITY_PATTERNS);
+}
+
+/**
+ * Combines role tier, pediatric-term richness, and specialty-area overlap
+ * into a single sortable score. Role tier is weighted an order of magnitude
+ * above the others so it always dominates: any NP posting outranks any
+ * Clinical Research Coordinator posting regardless of term counts.
+ */
+export function scoreMatch({ matchedRoleTerms, matchedPediatricTerms, matchedResumeAffinityTerms }) {
+  return (
+    roleWeight(matchedRoleTerms ?? []) * 10 +
+    (matchedPediatricTerms?.length ?? 0) +
+    (matchedResumeAffinityTerms?.length ?? 0) * 0.5
+  );
+}
+
+/** Human-readable fit label for the score's role tier, shown on the report. */
+export function fitLabel(matchedRoleTerms) {
+  const weight = roleWeight(matchedRoleTerms ?? []);
+  if (weight >= 5) return "Great fit";
+  if (weight >= 4) return "Good fit";
+  if (weight >= 2) return "Fair fit";
+  return "Possible fit";
+}

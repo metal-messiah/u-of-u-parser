@@ -3,7 +3,12 @@ name: Scrape U of U pediatric NP/APRN jobs
 on:
   schedule:
     # Off-the-hour minute so this doesn't line up with every other repo's
-    # top-of-hour cron and queue behind them.
+    # top-of-hour cron and queue behind them. In practice GitHub still only
+    # honors this on a best-effort basis on a low-traffic repo — observed
+    # actual cadence is every 3-6 hours, not hourly. See README's
+    # "Automated runs" section; this is a documented platform limitation
+    # (no SLA on `schedule:` timing), not a bug, and not worth working
+    # around given how slowly job postings actually change.
     - cron: "17 * * * *"
   workflow_dispatch: {}
 

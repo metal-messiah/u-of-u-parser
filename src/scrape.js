@@ -1,5 +1,5 @@
 import { searchAllPages } from "./jobsynApi.js";
-import { matchRoleTerms, matchPediatricTerms, SEARCH_QUERIES } from "./filters.js";
+import { matchRoleTerms, matchPediatricTerms, matchResumeAffinityTerms, scoreMatch, SEARCH_QUERIES } from "./filters.js";
 import { loadStore, saveStore, normalizeJob, mergeJobs } from "./store.js";
 import { writeReport } from "./report.js";
 import { writeEvaluatedReport } from "./evaluatedReport.js";
@@ -23,12 +23,15 @@ async function evaluateCandidates() {
 
       const matchedRoleTerms = matchRoleTerms(job.title, job.department);
       const matchedPediatricTerms = matchPediatricTerms(job.title, job.description);
+      const matchedResumeAffinityTerms = matchResumeAffinityTerms(job.title, job.description);
       const included = matchedRoleTerms.length > 0 && matchedPediatricTerms.length > 0;
 
       evaluated.set(job.reqid, {
         ...job,
         matchedRoleTerms,
         matchedPediatricTerms,
+        matchedResumeAffinityTerms,
+        matchScore: scoreMatch({ matchedRoleTerms, matchedPediatricTerms, matchedResumeAffinityTerms }),
         included,
         foundVia: query,
       });

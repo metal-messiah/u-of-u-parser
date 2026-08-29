@@ -1,5 +1,5 @@
 import { writeFile } from "node:fs/promises";
-import { escapeHtml, badge, section, renderMatchedLine, renderGeneratedTimestamp, CARD_STYLES } from "./htmlUtils.js";
+import { escapeHtml, badge, section, renderMatchedLine, renderGeneratedTimestamp, CARD_STYLES, NEW_RELIC_SNIPPET } from "./htmlUtils.js";
 
 const EVALUATED_PATH = new URL("../docs/evaluated.html", import.meta.url);
 

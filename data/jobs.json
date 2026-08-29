@@ -14,7 +14,7 @@
     "descriptionHash": "de2dbc3d2c3ec603",
     "status": "open",
     "firstSeenAt": "2026-08-28T20:41:59.318Z",
-    "lastSeenAt": "2026-08-29T19:53:34.579Z",
+    "lastSeenAt": "2026-08-29T20:12:56.089Z",
     "updatedAt": null,
     "closedAt": null,
     "matchedRoleTerms": [
@@ -26,7 +26,11 @@
       "NICU"
     ],
     "included": true,
-    "foundVia": "nurse practitioner"
+    "foundVia": "nurse practitioner",
+    "matchedResumeAffinityTerms": [
+      "Newborn"
+    ],
+    "matchScore": 53.5
   },
   "PRN03993F": {
     "reqid": "PRN03993F",
@@ -43,7 +47,7 @@
     "descriptionHash": "d0571a52123f36f1",
     "status": "open",
     "firstSeenAt": "2026-08-28T20:41:59.318Z",
-    "lastSeenAt": "2026-08-29T19:53:34.579Z",
+    "lastSeenAt": "2026-08-29T20:12:56.089Z",
     "updatedAt": null,
     "closedAt": null,
     "matchedRoleTerms": [
@@ -54,7 +58,12 @@
       "PNP"
     ],
     "included": true,
-    "foundVia": "nurse practitioner"
+    "foundVia": "nurse practitioner",
+    "matchedResumeAffinityTerms": [
+      "Acute Care",
+      "DNP"
+    ],
+    "matchScore": 53
   },
   "PRN17193N": {
     "reqid": "PRN17193N",
@@ -71,7 +80,7 @@
     "descriptionHash": "040ff27251361c9f",
     "status": "open",
     "firstSeenAt": "2026-08-28T20:41:59.318Z",
-    "lastSeenAt": "2026-08-29T19:53:34.579Z",
+    "lastSeenAt": "2026-08-29T20:12:56.089Z",
     "updatedAt": null,
     "closedAt": null,
     "matchedRoleTerms": [
@@ -81,7 +90,11 @@
       "youth"
     ],
     "included": true,
-    "foundVia": "nurse practitioner"
+    "foundVia": "nurse practitioner",
+    "matchedResumeAffinityTerms": [
+      "primary care"
+    ],
+    "matchScore": 51.5
   },
   "PRN03995F": {
     "reqid": "PRN03995F",
@@ -98,7 +111,7 @@
     "descriptionHash": "f02f5121a7789eb0",
     "status": "open",
     "firstSeenAt": "2026-08-28T20:41:59.318Z",
-    "lastSeenAt": "2026-08-29T19:53:34.579Z",
+    "lastSeenAt": "2026-08-29T20:12:56.089Z",
     "updatedAt": null,
     "closedAt": null,
     "matchedRoleTerms": [
@@ -109,7 +122,12 @@
       "PNP"
     ],
     "included": true,
-    "foundVia": "nurse practitioner"
+    "foundVia": "nurse practitioner",
+    "matchedResumeAffinityTerms": [
+      "Primary Care",
+      "DNP"
+    ],
+    "matchScore": 53
   },
   "PRN45948B": {
     "reqid": "PRN45948B",
@@ -126,7 +144,7 @@
     "descriptionHash": "db8e901d3245e89d",
     "status": "open",
     "firstSeenAt": "2026-08-28T20:41:59.318Z",
-    "lastSeenAt": "2026-08-29T19:53:34.579Z",
+    "lastSeenAt": "2026-08-29T20:12:56.089Z",
     "updatedAt": null,
     "closedAt": null,
     "matchedRoleTerms": [
@@ -139,7 +157,11 @@
       "children"
     ],
     "included": true,
-    "foundVia": "nurse practitioner"
+    "foundVia": "nurse practitioner",
+    "matchedResumeAffinityTerms": [
+      "Newborn"
+    ],
+    "matchScore": 54.5
   },
   "PRN46035B": {
     "reqid": "PRN46035B",
@@ -156,7 +178,7 @@
     "descriptionHash": "9bd2a63e29ec2340",
     "status": "open",
     "firstSeenAt": "2026-08-28T20:41:59.318Z",
-    "lastSeenAt": "2026-08-29T19:53:34.579Z",
+    "lastSeenAt": "2026-08-29T20:12:56.089Z",
     "updatedAt": null,
     "closedAt": null,
     "matchedRoleTerms": [
@@ -166,7 +188,12 @@
       "Pediatric"
     ],
     "included": true,
-    "foundVia": "nurse practitioner"
+    "foundVia": "nurse practitioner",
+    "matchedResumeAffinityTerms": [
+      "ED",
+      "outpatient"
+    ],
+    "matchScore": 52
   },
   "PRN45774B": {
     "reqid": "PRN45774B",
@@ -183,7 +210,7 @@
     "descriptionHash": "8b6ec330eb5397ab",
     "status": "open",
     "firstSeenAt": "2026-08-28T20:41:59.318Z",
-    "lastSeenAt": "2026-08-29T19:53:34.579Z",
+    "lastSeenAt": "2026-08-29T20:12:56.089Z",
     "updatedAt": null,
     "closedAt": null,
     "matchedRoleTerms": [
@@ -195,7 +222,12 @@
       "adolescent"
     ],
     "included": true,
-    "foundVia": "nurse practitioner"
+    "foundVia": "nurse practitioner",
+    "matchedResumeAffinityTerms": [
+      "primary care",
+      "outpatient"
+    ],
+    "matchScore": 54
   },
   "PRN45544B": {
     "reqid": "PRN45544B",
@@ -221,9 +253,11 @@
     "foundVia": "nurse practitioner",
     "status": "open",
     "firstSeenAt": "2026-08-28T21:36:11.798Z",
-    "lastSeenAt": "2026-08-29T19:53:34.579Z",
+    "lastSeenAt": "2026-08-29T20:12:56.089Z",
     "updatedAt": null,
-    "closedAt": null
+    "closedAt": null,
+    "matchedResumeAffinityTerms": [],
+    "matchScore": 12
   },
   "PRN46034B": {
     "reqid": "PRN46034B",
@@ -249,9 +283,11 @@
     "foundVia": "Clinical Research Coordinator",
     "status": "open",
     "firstSeenAt": "2026-08-28T21:36:11.798Z",
-    "lastSeenAt": "2026-08-29T19:53:34.579Z",
+    "lastSeenAt": "2026-08-29T20:12:56.089Z",
     "updatedAt": null,
-    "closedAt": null
+    "closedAt": null,
+    "matchedResumeAffinityTerms": [],
+    "matchScore": 12
   },
   "PRN45716B": {
     "reqid": "PRN45716B",
@@ -277,9 +313,11 @@
     "foundVia": "Care Coordinator",
     "status": "open",
     "firstSeenAt": "2026-08-28T21:36:11.798Z",
-    "lastSeenAt": "2026-08-29T19:53:34.579Z",
+    "lastSeenAt": "2026-08-29T20:12:56.089Z",
     "updatedAt": null,
-    "closedAt": null
+    "closedAt": null,
+    "matchedResumeAffinityTerms": [],
+    "matchScore": 12
   },
   "PRN03941F": {
     "reqid": "PRN03941F",
@@ -305,8 +343,13 @@
     "foundVia": "nurse practitioner",
     "status": "open",
     "firstSeenAt": "2026-08-28T22:44:32.973Z",
-    "lastSeenAt": "2026-08-29T19:53:34.579Z",
+    "lastSeenAt": "2026-08-29T20:12:56.089Z",
     "updatedAt": null,
-    "closedAt": null
+    "closedAt": null,
+    "matchedResumeAffinityTerms": [
+      "Acute Care",
+      "DNP"
+    ],
+    "matchScore": 43
   }
 }
