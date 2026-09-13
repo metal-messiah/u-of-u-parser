@@ -31,7 +31,7 @@
     "foundVia": "APP",
     "status": "open",
     "firstSeenAt": "2026-09-08T18:43:54.155Z",
-    "lastSeenAt": "2026-09-13T01:09:25.784Z",
+    "lastSeenAt": "2026-09-13T06:13:13.234Z",
     "updatedAt": null,
     "closedAt": null
   },
@@ -50,7 +50,7 @@
     "descriptionHash": "de2dbc3d2c3ec603",
     "status": "open",
     "firstSeenAt": "2026-08-28T20:41:59.318Z",
-    "lastSeenAt": "2026-09-13T01:09:25.784Z",
+    "lastSeenAt": "2026-09-13T06:13:13.234Z",
     "updatedAt": null,
     "closedAt": null,
     "matchedRoleTerms": [
@@ -62,7 +62,7 @@
       "NICU"
     ],
     "included": true,
-    "foundVia": "APRN",
+    "foundVia": "nurse practitioner",
     "matchedResumeAffinityTerms": [
       "Newborn"
     ],
@@ -86,7 +86,7 @@
     "descriptionHash": "d0571a52123f36f1",
     "status": "open",
     "firstSeenAt": "2026-08-28T20:41:59.318Z",
-    "lastSeenAt": "2026-09-13T01:09:25.784Z",
+    "lastSeenAt": "2026-09-13T06:13:13.234Z",
     "updatedAt": null,
     "closedAt": null,
     "matchedRoleTerms": [
@@ -97,7 +97,7 @@
       "PNP"
     ],
     "included": true,
-    "foundVia": "APRN",
+    "foundVia": "nurse practitioner",
     "matchedResumeAffinityTerms": [
       "Acute Care",
       "DNP"
@@ -122,7 +122,7 @@
     "descriptionHash": "040ff27251361c9f",
     "status": "open",
     "firstSeenAt": "2026-08-28T20:41:59.318Z",
-    "lastSeenAt": "2026-09-13T01:09:25.784Z",
+    "lastSeenAt": "2026-09-13T06:13:13.234Z",
     "updatedAt": null,
     "closedAt": null,
     "matchedRoleTerms": [
@@ -132,7 +132,7 @@
       "youth"
     ],
     "included": true,
-    "foundVia": "APRN",
+    "foundVia": "nurse practitioner",
     "matchedResumeAffinityTerms": [
       "primary care"
     ],
@@ -158,7 +158,7 @@
     "descriptionHash": "f02f5121a7789eb0",
     "status": "open",
     "firstSeenAt": "2026-08-28T20:41:59.318Z",
-    "lastSeenAt": "2026-09-13T01:09:25.784Z",
+    "lastSeenAt": "2026-09-13T06:13:13.234Z",
     "updatedAt": null,
     "closedAt": null,
     "matchedRoleTerms": [
@@ -169,7 +169,7 @@
       "PNP"
     ],
     "included": true,
-    "foundVia": "APRN",
+    "foundVia": "nurse practitioner",
     "matchedResumeAffinityTerms": [
       "Primary Care",
       "DNP"
@@ -194,7 +194,7 @@
     "descriptionHash": "db8e901d3245e89d",
     "status": "open",
     "firstSeenAt": "2026-08-28T20:41:59.318Z",
-    "lastSeenAt": "2026-09-13T01:09:25.784Z",
+    "lastSeenAt": "2026-09-13T06:13:13.234Z",
     "updatedAt": null,
     "closedAt": null,
     "matchedRoleTerms": [
@@ -207,7 +207,7 @@
       "children"
     ],
     "included": true,
-    "foundVia": "APRN",
+    "foundVia": "nurse practitioner",
     "matchedResumeAffinityTerms": [
       "Newborn"
     ],
@@ -231,7 +231,7 @@
     "descriptionHash": "9bd2a63e29ec2340",
     "status": "open",
     "firstSeenAt": "2026-08-28T20:41:59.318Z",
-    "lastSeenAt": "2026-09-13T01:09:25.784Z",
+    "lastSeenAt": "2026-09-13T06:13:13.234Z",
     "updatedAt": null,
     "closedAt": null,
     "matchedRoleTerms": [
@@ -241,7 +241,7 @@
       "Pediatric"
     ],
     "included": true,
-    "foundVia": "APRN",
+    "foundVia": "nurse practitioner",
     "matchedResumeAffinityTerms": [
       "ED",
       "outpatient"
@@ -266,7 +266,7 @@
     "descriptionHash": "8b6ec330eb5397ab",
     "status": "open",
     "firstSeenAt": "2026-08-28T20:41:59.318Z",
-    "lastSeenAt": "2026-09-13T01:09:25.784Z",
+    "lastSeenAt": "2026-09-13T06:13:13.234Z",
     "updatedAt": null,
     "closedAt": null,
     "matchedRoleTerms": [
@@ -278,7 +278,7 @@
       "adolescent"
     ],
     "included": true,
-    "foundVia": "APRN",
+    "foundVia": "nurse practitioner",
     "matchedResumeAffinityTerms": [
       "primary care",
       "outpatient"
@@ -314,7 +314,7 @@
     "foundVia": "Clinical Research Coordinator",
     "status": "open",
     "firstSeenAt": "2026-08-28T21:36:11.798Z",
-    "lastSeenAt": "2026-09-13T01:09:25.784Z",
+    "lastSeenAt": "2026-09-13T06:13:13.234Z",
     "updatedAt": null,
     "closedAt": null,
     "matchedResumeAffinityTerms": [],
@@ -349,7 +349,7 @@
     "foundVia": "APP",
     "status": "open",
     "firstSeenAt": "2026-08-28T21:36:11.798Z",
-    "lastSeenAt": "2026-09-13T01:09:25.784Z",
+    "lastSeenAt": "2026-09-13T06:13:13.234Z",
     "updatedAt": null,
     "closedAt": null,
     "matchedResumeAffinityTerms": [],
@@ -381,10 +381,10 @@
       "Children"
     ],
     "included": true,
-    "foundVia": "Clinical Research Coordinator",
+    "foundVia": "Care Coordinator",
     "status": "open",
     "firstSeenAt": "2026-08-28T21:36:11.798Z",
-    "lastSeenAt": "2026-09-13T01:09:25.784Z",
+    "lastSeenAt": "2026-09-13T06:13:13.234Z",
     "updatedAt": null,
     "closedAt": null,
     "matchedResumeAffinityTerms": [],
@@ -416,10 +416,10 @@
       "Neonatal"
     ],
     "included": true,
-    "foundVia": "APRN",
+    "foundVia": "nurse practitioner",
     "status": "open",
     "firstSeenAt": "2026-08-28T22:44:32.973Z",
-    "lastSeenAt": "2026-09-13T01:09:25.784Z",
+    "lastSeenAt": "2026-09-13T06:13:13.234Z",
     "updatedAt": null,
     "closedAt": null,
     "matchedResumeAffinityTerms": [
