@@ -31,7 +31,7 @@
     "foundVia": "Nurse Educator",
     "status": "open",
     "firstSeenAt": "2026-09-08T18:43:54.155Z",
-    "lastSeenAt": "2026-09-29T20:49:22.480Z",
+    "lastSeenAt": "2026-09-30T00:29:36.891Z",
     "updatedAt": null,
     "closedAt": null
   },
@@ -50,7 +50,7 @@
     "descriptionHash": "de2dbc3d2c3ec603",
     "status": "open",
     "firstSeenAt": "2026-08-28T20:41:59.318Z",
-    "lastSeenAt": "2026-09-29T20:49:22.480Z",
+    "lastSeenAt": "2026-09-30T00:29:36.891Z",
     "updatedAt": null,
     "closedAt": null,
     "matchedRoleTerms": [
@@ -86,7 +86,7 @@
     "descriptionHash": "d0571a52123f36f1",
     "status": "open",
     "firstSeenAt": "2026-08-28T20:41:59.318Z",
-    "lastSeenAt": "2026-09-29T20:49:22.480Z",
+    "lastSeenAt": "2026-09-30T00:29:36.891Z",
     "updatedAt": null,
     "closedAt": null,
     "matchedRoleTerms": [
@@ -122,7 +122,7 @@
     "descriptionHash": "040ff27251361c9f",
     "status": "open",
     "firstSeenAt": "2026-08-28T20:41:59.318Z",
-    "lastSeenAt": "2026-09-29T20:49:22.480Z",
+    "lastSeenAt": "2026-09-30T00:29:36.891Z",
     "updatedAt": null,
     "closedAt": null,
     "matchedRoleTerms": [
@@ -158,7 +158,7 @@
     "descriptionHash": "f02f5121a7789eb0",
     "status": "open",
     "firstSeenAt": "2026-08-28T20:41:59.318Z",
-    "lastSeenAt": "2026-09-29T20:49:22.480Z",
+    "lastSeenAt": "2026-09-30T00:29:36.891Z",
     "updatedAt": null,
     "closedAt": null,
     "matchedRoleTerms": [
@@ -194,7 +194,7 @@
     "descriptionHash": "db8e901d3245e89d",
     "status": "open",
     "firstSeenAt": "2026-08-28T20:41:59.318Z",
-    "lastSeenAt": "2026-09-29T20:49:22.480Z",
+    "lastSeenAt": "2026-09-30T00:29:36.891Z",
     "updatedAt": null,
     "closedAt": null,
     "matchedRoleTerms": [
@@ -231,7 +231,7 @@
     "descriptionHash": "9bd2a63e29ec2340",
     "status": "open",
     "firstSeenAt": "2026-08-28T20:41:59.318Z",
-    "lastSeenAt": "2026-09-29T20:49:22.480Z",
+    "lastSeenAt": "2026-09-30T00:29:36.891Z",
     "updatedAt": null,
     "closedAt": null,
     "matchedRoleTerms": [
@@ -266,7 +266,7 @@
     "descriptionHash": "8b6ec330eb5397ab",
     "status": "open",
     "firstSeenAt": "2026-08-28T20:41:59.318Z",
-    "lastSeenAt": "2026-09-29T20:49:22.480Z",
+    "lastSeenAt": "2026-09-30T00:29:36.891Z",
     "updatedAt": null,
     "closedAt": null,
     "matchedRoleTerms": [
@@ -314,7 +314,7 @@
     "foundVia": "Clinical Research Coordinator",
     "status": "open",
     "firstSeenAt": "2026-08-28T21:36:11.798Z",
-    "lastSeenAt": "2026-09-29T20:49:22.480Z",
+    "lastSeenAt": "2026-09-30T00:29:36.891Z",
     "updatedAt": null,
     "closedAt": null,
     "matchedResumeAffinityTerms": [],
@@ -349,7 +349,7 @@
     "foundVia": "Clinical Research Coordinator",
     "status": "open",
     "firstSeenAt": "2026-08-28T21:36:11.798Z",
-    "lastSeenAt": "2026-09-29T20:49:22.480Z",
+    "lastSeenAt": "2026-09-30T00:29:36.891Z",
     "updatedAt": null,
     "closedAt": null,
     "matchedResumeAffinityTerms": [],
@@ -419,7 +419,7 @@
     "foundVia": "nurse practitioner",
     "status": "open",
     "firstSeenAt": "2026-08-28T22:44:32.973Z",
-    "lastSeenAt": "2026-09-29T20:49:22.480Z",
+    "lastSeenAt": "2026-09-30T00:29:36.891Z",
     "updatedAt": null,
     "closedAt": null,
     "matchedResumeAffinityTerms": [
@@ -465,7 +465,7 @@
     "foundVia": "nurse practitioner",
     "status": "open",
     "firstSeenAt": "2026-09-23T20:25:05.874Z",
-    "lastSeenAt": "2026-09-29T20:49:22.480Z",
+    "lastSeenAt": "2026-09-30T00:29:36.891Z",
     "updatedAt": null,
     "closedAt": null
   },
@@ -500,10 +500,10 @@
     ],
     "matchScore": 18.5,
     "included": true,
-    "foundVia": "Care Coordinator",
+    "foundVia": "APP",
     "status": "open",
     "firstSeenAt": "2026-09-28T22:04:03.844Z",
-    "lastSeenAt": "2026-09-29T20:49:22.480Z",
+    "lastSeenAt": "2026-09-30T00:29:36.891Z",
     "updatedAt": null,
     "closedAt": null
   },
@@ -543,7 +543,43 @@
     "foundVia": "nurse practitioner",
     "status": "open",
     "firstSeenAt": "2026-09-29T20:49:22.480Z",
-    "lastSeenAt": "2026-09-29T20:49:22.480Z",
+    "lastSeenAt": "2026-09-30T00:29:36.891Z",
+    "updatedAt": null,
+    "closedAt": null
+  },
+  "PRN46347B": {
+    "reqid": "PRN46347B",
+    "title": "PMHNP - HMHI Youth Receiving",
+    "organization": "University of Utah Health Academics",
+    "location": "Salt Lake City, UT",
+    "department": "00864 - Psychiatry - Child Clinical",
+    "payRange": "$132,661 - $152,147",
+    "employmentType": "Full Time",
+    "shift": "Variable",
+    "workScheduleSummary": null,
+    "openDate": "09/30/2026",
+    "closeDate": "10/30/2026",
+    "applyUrl": "https://rr.jobsyn.org/C6A4AA75439D4385A81FAA3A0331F278",
+    "description": "<p>Details</p>\n\n<p><strong>Open Date</strong> 09/30/2026</p>\n\n<p><strong>Requisition Number</strong> PRN46347B</p>\n\n<p><strong>Job Title</strong> PS HMHI Psychiatric Mental Health Nurse Practitioner</p>\n\n<p><strong>Working Title</strong> PMHNP - HMHI Youth Receiving</p>\n\n<p><strong>Career Progression Track</strong> UGR</p>\n\n<p><strong>Track Level</strong></p>\n\n<p><strong>FLSA Code</strong> Professional</p>\n\n<p><strong>Patient Sensitive Job Code?</strong> Yes</p>\n\n<p><strong>Standard Hours per Week</strong> 40</p>\n\n<p><strong>Full Time or Part Time?</strong> Full Time</p>\n\n<p><strong>Shift</strong> Variable</p>\n\n<p><strong>Work Schedule Summary</strong></p>\n\n<p><strong>VP Area</strong> U of U Health - Academics</p>\n\n<p><strong>Department</strong> 00864 - Psychiatry - Child Clinical</p>\n\n<p><strong>Location</strong> Campus</p>\n\n<p><strong>City</strong> Salt Lake City, UT</p>\n\n<p><strong>Type of Recruitment</strong> External Posting</p>\n\n<p><strong>Pay Rate Range</strong> $132,661 - $152,147</p>\n\n<p><strong>Close Date</strong> 10/30/2026</p>\n\n<p><strong>Priority Review Date (Note - Posting may close at any time)</strong></p>\n\n<p><strong>Job Summary</strong></p>\n\n<p>This position provides bedded outpatient Substance Abuse and Mental Health Treatment to patients in the HMHI Youth Receiving Center. This position will prescribe medications and provide short-term treatment for SUD /mental health disorders within their scope of practice and according to State Law.</p>\n\n<p>The Youth Receiving Center at Huntsman Mental Health Institute ( HMHI ) helps individuals get help during a mental health crisis 24 hours a day, seven days a week. Patients are supported by a skilled team of mental health care professionals who help patients receive care and create a connection to community resources.</p>\n\n<p>The interventions are short, highly intensive, and focused on resolving mental health crisis in the least restrictive manner possible. This approach leads to better patient outcomes with lower cost to an emergency room visit due to reduction of unnecessary inpatient care.</p>\n\n<p>Care is individualized to the needs of each patient:</p>\n\n<p>Crisis evaluation focused on understanding individual needs</p>\n\n<p>Psychiatric assessment of a person’s mental health condition</p>\n\n<p>Medication prescribing, if needed, for stabilizing symptoms</p>\n\n<p>Solution-focused therapy, peer support, and case management</p>\n\n<p>Recommendations for next steps and connection to ongoing support</p>\n\n<p>Crisis observation, if needed, for up to 23 hours</p>\n\n<p><strong>Responsibilities</strong></p>\n\n<ul>\n<li><p>Takes complex medical histories on patients referred for consultation by academic and community physicians.</p></li>\n\n\n\n\n\n<li><p>Performs physical examinations.</p></li>\n\n\n\n\n\n<li><p>Orders laboratory tests, x-rays, special imaging studies and other diagnostic procedures.</p></li>\n\n\n\n\n\n<li><p>Orders and supervises the administration of blood products.</p></li>\n\n\n\n\n\n<li><p>Reaches tentative diagnosis of medical, surgical and other conditions.</p></li>\n\n\n\n\n\n<li><p>Develops treatment plans in conjunction with attending physician to provide optimal patient medical management.</p></li>\n\n\n\n\n\n<li><p>Participates in continuing medical education to include specialty and sub-specialty meetings, clubs, boards and conferences.</p></li>\n\n\n\n\n\n<li><p>Assists in the collection of data for research projects.</p></li>\n\n\n\n\n\n<li><p>Orders consultations and interacts with members of other specialty medical teams.</p></li>\n\n\n\n\n\n<li><p>Participates in special projects and committee functions.</p></li>\n</ul>\n\n<p><strong>Minimum Qualifications</strong></p>\n\n<p>Required:</p>\n\n<ul>\n<li><p>Current RQI Healthcare Provider eCredential through the University of Utah Health RQI system. The eCredential is to be obtained within 30 days of hire.</p></li>\n\n\n\n\n\n\n\n\n\n\n\n\n\n<li><p>Must hold a valid registered license in the state where they intend to practice as an advanced practice psychiatric mental health nurse and have successfully completed ANCC certification as a Psychiatric Mental Health Nurse Practitioner ( PMHNP -BC).</p></li>\n</ul>\n\n<p>Preferred:</p>\n\n<ul>\n<li>2 years of ambulatory mental health experience is preferred</li>\n</ul>\n\n<p><strong>Preferences</strong></p>\n\n<p>Certification in ACLS / BLS / NRP / ATLS may be required by your department or by privileging criteria.</p>\n\n<p><strong>Type</strong> Benefited Staff</p>\n\n<p><strong>Special Instructions Summary</strong></p>\n\n<p><strong>Additional Information</strong></p>\n\n<p>The University is a participating employer with Utah Retirement Systems (“URS”). Eligible new hires with prior URS service, may elect to enroll in URS if they make the election before they become eligible for retirement (usually the first day of work). Contact Human Resources at (801) 581-7447 for information. Individuals who previously retired and are receiving monthly retirement benefits from URS are subject to URS’ post-retirement rules and restrictions. Please contact Utah Retirement Systems at (801) 366-7770 or (800) 695-4877 or University Human Resource Management at (801) 581-7447 if you have questions regarding the post-retirement rules.</p>\n\n<p>This position may require the successful completion of a criminal background check and/or drug screen.</p>\n\n<p>The University of Utah values candidates who have experience working in settings with students and possess a strong commitment to improving access to higher education.</p>\n\n<p>Veterans’ preference is extended to qualified applicants, upon request and consistent with University policy and Utah state law. Upon request, reasonable accommodations in the application process will be provided to individuals with disabilities.</p>\n\n<p>Consistent with state and federal law, the University of Utah does not discriminate based upon race, ethnicity, color, religion, national origin, age, disability, sex, sexual orientation, gender, gender identity, gender expression, pregnancy, pregnancy-related conditions, genetic information, or protected veteran’s status. The University does not discriminate on the basis of sex in the education program or activity that it operates, as required by Title IX and 34 CFR part 106. The requirement not to discriminate in education programs or activities extends to admission and employment. Inquiries about the application of Title IX and its regulations may be referred to the Title IX Coordinator, to the Department of Education, Office for Civil Rights, or both.</p>\n\n<p>To request a reasonable accommodation for a disability or if you or someone you know has experienced discrimination or sexual misconduct including sexual harassment, you may contact the Director/Title IX Coordinator in the Office of Equal Opportunity and Title IX ( OEO ). More information, including the Director/Title IX Coordinator’s office address, electronic mail address, and telephone number can be located at the:<strong>University of Utah Non‑Discrimination page</strong>.</p>\n\n<p>Online reports may be submitted at<strong>https://oeo.utah.edu</strong></p>\n\n<p>**https://publicsafety.utah.edu/safetyreport/**This report includes statistics about criminal offenses, hate crimes, arrests and referrals for disciplinary action, and Violence Against Women Act offenses. They also provide information about safety and security-related services offered by the University of Utah. A paper copy can be obtained by request at the Department of Public Safety located at 1658 East 500 South.</p>\n\n<p>As per<strong>University of Utah policy 5-108: Transfer of Benefits Eligible Staff Members</strong>, a new hire to the University of Utah who is still serving a 12 month probationary period will not be hired into another University of Utah job (a transfer) until the successful completion of the probationary period.</p>",
+    "descriptionHash": "9ca6ffbda36ea5a7",
+    "matchedRoleTerms": [
+      "PMHNP"
+    ],
+    "matchedPediatricTerms": [
+      "Child",
+      "Youth"
+    ],
+    "matchedResumeAffinityTerms": [
+      "case management",
+      "outpatient"
+    ],
+    "matchedBonusTerms": [],
+    "matchScore": 53,
+    "included": true,
+    "foundVia": "nurse practitioner",
+    "status": "open",
+    "firstSeenAt": "2026-09-30T00:29:36.891Z",
+    "lastSeenAt": "2026-09-30T00:29:36.891Z",
     "updatedAt": null,
     "closedAt": null
   }
