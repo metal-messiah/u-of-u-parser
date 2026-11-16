@@ -86,7 +86,7 @@
     "descriptionHash": "d0571a52123f36f1",
     "status": "open",
     "firstSeenAt": "2026-08-28T20:41:59.318Z",
-    "lastSeenAt": "2026-11-13T16:26:39.736Z",
+    "lastSeenAt": "2026-11-16T20:31:02.831Z",
     "updatedAt": null,
     "closedAt": null,
     "matchedRoleTerms": [
@@ -158,7 +158,7 @@
     "descriptionHash": "f02f5121a7789eb0",
     "status": "open",
     "firstSeenAt": "2026-08-28T20:41:59.318Z",
-    "lastSeenAt": "2026-11-13T16:26:39.736Z",
+    "lastSeenAt": "2026-11-16T20:31:02.831Z",
     "updatedAt": null,
     "closedAt": null,
     "matchedRoleTerms": [
@@ -419,7 +419,7 @@
     "foundVia": "nurse practitioner",
     "status": "open",
     "firstSeenAt": "2026-08-28T22:44:32.973Z",
-    "lastSeenAt": "2026-11-13T16:26:39.736Z",
+    "lastSeenAt": "2026-11-16T20:31:02.831Z",
     "updatedAt": null,
     "closedAt": null,
     "matchedResumeAffinityTerms": [
@@ -465,7 +465,7 @@
     "foundVia": "nurse practitioner",
     "status": "open",
     "firstSeenAt": "2026-09-23T20:25:05.874Z",
-    "lastSeenAt": "2026-11-13T16:26:39.736Z",
+    "lastSeenAt": "2026-11-16T20:31:02.831Z",
     "updatedAt": null,
     "closedAt": null
   },
@@ -501,11 +501,11 @@
     "matchScore": 18.5,
     "included": true,
     "foundVia": "APP",
-    "status": "open",
+    "status": "closed",
     "firstSeenAt": "2026-09-28T22:04:03.844Z",
     "lastSeenAt": "2026-11-13T16:26:39.736Z",
     "updatedAt": null,
-    "closedAt": null
+    "closedAt": "2026-11-16T20:31:02.831Z"
   },
   "PRN46334B": {
     "reqid": "PRN46334B",
@@ -543,7 +543,7 @@
     "foundVia": "nurse practitioner",
     "status": "open",
     "firstSeenAt": "2026-09-29T20:49:22.480Z",
-    "lastSeenAt": "2026-11-13T16:26:39.736Z",
+    "lastSeenAt": "2026-11-16T20:31:02.831Z",
     "updatedAt": null,
     "closedAt": null
   },
@@ -615,7 +615,7 @@
     "foundVia": "APP",
     "status": "open",
     "firstSeenAt": "2026-10-08T16:30:40.989Z",
-    "lastSeenAt": "2026-11-13T16:26:39.736Z",
+    "lastSeenAt": "2026-11-16T20:31:02.831Z",
     "updatedAt": "2026-11-04T23:42:24.058Z",
     "closedAt": null
   },
@@ -682,10 +682,10 @@
     ],
     "matchScore": 15,
     "included": true,
-    "foundVia": "Clinical Research Coordinator",
+    "foundVia": "APP",
     "status": "open",
     "firstSeenAt": "2026-11-05T22:01:22.801Z",
-    "lastSeenAt": "2026-11-13T16:26:39.736Z",
+    "lastSeenAt": "2026-11-16T20:31:02.831Z",
     "updatedAt": null,
     "closedAt": null
   },
@@ -721,7 +721,45 @@
     "foundVia": "Clinical Research Coordinator",
     "status": "open",
     "firstSeenAt": "2026-11-11T22:01:50.003Z",
-    "lastSeenAt": "2026-11-13T16:26:39.736Z",
+    "lastSeenAt": "2026-11-16T20:31:02.831Z",
+    "updatedAt": null,
+    "closedAt": null
+  },
+  "PRN46750B": {
+    "reqid": "PRN46750B",
+    "title": "PS Nurse Practitioner",
+    "organization": "University of Utah Health Academics",
+    "location": "Salt Lake City, UT",
+    "department": "00902 - Pediatric Urology Development",
+    "payRange": "112,237 - 143,104",
+    "employmentType": "Full Time",
+    "shift": "Day",
+    "workScheduleSummary": null,
+    "openDate": "11/12/2026",
+    "closeDate": "02/12/2027",
+    "applyUrl": "https://rr.jobsyn.org/D2A18EBC292647C3BA2BCBB27D8B76C0",
+    "description": "<p>Details</p>\n\n<p><strong>Open Date</strong> 11/12/2026</p>\n\n<p><strong>Requisition Number</strong> PRN46750B</p>\n\n<p><strong>Job Title</strong> PS Nurse Practitioner</p>\n\n<p><strong>Working Title</strong> PS Nurse Practitioner</p>\n\n<p><strong>Career Progression Track</strong> UGR</p>\n\n<p><strong>Track Level</strong></p>\n\n<p><strong>FLSA Code</strong> Professional</p>\n\n<p><strong>Patient Sensitive Job Code?</strong> Yes</p>\n\n<p><strong>Standard Hours per Week</strong> 40</p>\n\n<p><strong>Full Time or Part Time?</strong> Full Time</p>\n\n<p><strong>Shift</strong> Day</p>\n\n<p><strong>Work Schedule Summary</strong></p>\n\n<p>weekdays</p>\n\n<p><strong>VP Area</strong> U of U Health - Academics</p>\n\n<p><strong>Department</strong> 00902 - Pediatric Urology Development</p>\n\n<p><strong>Location</strong> Campus</p>\n\n<p><strong>City</strong> Salt Lake City, UT</p>\n\n<p><strong>Type of Recruitment</strong> External Posting</p>\n\n<p><strong>Pay Rate Range</strong> 112,237 - 143,104</p>\n\n<p><strong>Close Date</strong> 02/12/2027</p>\n\n<p><strong>Priority Review Date (Note - Posting may close at any time)</strong></p>\n\n<p><strong>Job Summary</strong></p>\n\n<p>This is a full-time inpatient and outpatient position that is responsible for duties at both the University of Utah Pediatric Urology clinics under the Division of Urology and its affiliated hospital, Primary Children’s Hospital. The primary inpatient responsibilities include care of the inpatient population in the form of post-operative patient discharge orders, organizing patient education and coordination of care with outpatient teams including follow up appointments. The candidate will be responsible for inpatient and ED consultations for various urological conditions in coordination with the pediatric urology fellow, residents and staff. Part of these consultations may include minor procedures depending upon urologic work experience or developed skills.</p>\n\n<p>Other responsibilities would include hospital admissions, including orders and coordinating care with other specialties and nursing staff. The candidate would be expected to become an expert in the field of pediatric urology with a good understanding of the various urologic diseases and management. As the candidate progresses, opportunity to progress will be granted as well. This may include potential OR first assisting at Primary Children’s Hospital including with the robotics program.</p>\n\n<p>Outpatient duties include independent clinic visits with pediatric urology patients, assisting other providers with outpatient clinical care and assisting with outpatient visits at Primary Children’s outpatient multidisciplinary clinics (including but not limited to spina bifida clinic, DSD clinic and fetal clinic). This includes prep-work and chart review for multidisciplinary clinics and managing outpatient phone calls.</p>\n\n<p>The candidate needs to have strong organizational skills, an ability to work independently within a system and be able to adapt to changing time schedules. Continued learning and growth is highly valued. As such, continued education, conferences, skill development are required.</p>\n\n<p>As a patient-focused organization, the University of Utah Health exists to enhance the health and well-being of people through patient care, research and education. Success in this mission requires a culture of collaboration, excellence, leadership, and respect. The Health Sciences Center seek faculty and staff who are committed to the values of compassion, collaboration, innovation, responsibility, integrity, quality and trust that are integral to our mission.</p>\n\n<p><strong>Responsibilities</strong></p>\n\n<ol>\n<li><p>Approximately 40% time spent at the University of Utah Pediatric Urology clinic and 60% time spent Primary Children’s Hospital inpatient and outpatient setting. Adjustable dependent upon need. (i.e. – as inpatient needs increase)</p></li>\n\n\n\n\n\n<li><p>Takes complex medical histories on inpatients referred for consultation by inpatient and community physicians.</p></li>\n\n\n\n\n\n<li><p>Performs physical examinations.</p></li>\n\n\n\n\n\n<li><p>Orders laboratory tests, imaging studies and other diagnostic procedures.</p></li>\n\n\n\n\n\n<li><p>Reach diagnosis of medical, surgical and other conditions.</p></li>\n\n\n\n\n\n<li><p>Develops treatment plans in conjunction with attending physician to provide optimal patient medical management.</p></li>\n\n\n\n\n\n<li><p>Counsel and educate patients.</p></li>\n\n\n\n\n\n<li><p>Participates in continuing medical education to include specialty and sub-specialty meetings, clubs, boards and conferences.</p></li>\n\n\n\n\n\n<li><p>Orders consultations and interacts with members of other specialty medical teams.</p></li>\n\n\n\n\n\n<li><p>Participates in special projects and committee functions.</p></li>\n\n\n\n\n\n<li><p>Assist with inpatient Urology procedures, including potential to provide Surgical 1st assisting on surgical cases at Primary Children’s Hospital.</p></li>\n</ol>\n\n<ul>\n<li>This job description is not designed to contain or be interpreted as a comprehensive inventory of all duties, responsibilities and qualifications required of employees assigned to the job.</li>\n</ul>\n\n<p>Work Environment and Level of Frequency that may be required:</p>\n\n<p>Nearly Continuously: Office and hospital environment.</p>\n\n<p>Often: Infectious disease, oils ( <em>there is air or skin exposure to oils or other cutting fluids</em> ), hazards ( <em>includes a variety of physical conditions, such as proximity to moving mechanical parts, moving vehicles, electrical current, working on scaffolding and high places, or exposure to chemicals</em> ).</p>\n\n<p>Physical Requirements and Level of Frequency that may be required</p>\n\n<p>Nearly Continuously: Hearing, listening, talking.</p>\n\n<p>Often: Repetitive hand motion (such as typing), walking, standing, sitting.</p>\n\n<p>Seldom: Bending, reaching overhead.</p>\n\n<p><strong>Minimum Qualifications</strong></p>\n\n<p>Required</p>\n\n<p>Licensure to practice as a Nurse Practitioner in the State of Utah.</p>\n\n<p>Preferred</p>\n\n<p>Certification in ACLS / BLS / NRP / ATLS may be required by your department or by privileging criteria.</p>\n\n<p>Utah State prescriptive privileges.</p>\n\n<p>Licensure is obtained by completing a Master’s degree in Nursing or equivalency (the only equivalency to the Master’s degree is current licensure as a Nurse Practitioner) and a National Certification which requires the successful completion of a nationally accredited examination.</p>\n\n<p>UHPPM 1-56 requires that newly hired non-physician providers apply for credentialing and privileging at the time of hire.</p>\n\n<p>This position is patient-sensitive and must fulfill all associated requirements. We protect our patients, coworkers and community by requiring all patient-sensitive employees to be immunized according to CDC standards and hospital policy. Limited exemptions may be made for documented medical contraindications or religious beliefs that object to vaccinations.</p>\n\n<p>Applicants must demonstrate the potential ability to perform the essential functions of the job as outlined in the position description.</p>\n\n<p>Disclaimer</p>\n\n<p>This job description has been designed to indicate the general nature and level of work performed by employees within this classification. It is not designed to contain or be interpreted as a comprehensive inventory of all duties, responsibilities and qualifications required of employees assigned to the job.</p>\n\n<p><strong>Preferences</strong></p>\n\n<ul>\n<li><p>Current RQI Healthcare Provider eCredential through the University of Utah Health RQI system. The eCredential is to be obtained within 30 days of hire.</p></li>\n\n\n\n\n\n<li><p>Certification in ACLS / BLS / NRP / ATLS / PALS may be required by your department or by privileging criteria.</p></li>\n</ul>\n\n<p><strong>Type</strong> Benefited Staff</p>\n\n<p><strong>Special Instructions Summary</strong></p>\n\n<p><strong>Additional Information</strong></p>\n\n<p>The University is a participating employer with Utah Retirement Systems (“URS”). Eligible new hires with prior URS service, may elect to enroll in URS if they make the election before they become eligible for retirement (usually the first day of work). Contact Human Resources at (801) 581-7447 for information. Individuals who previously retired and are receiving monthly retirement benefits from URS are subject to URS’ post-retirement rules and restrictions. Please contact Utah Retirement Systems at (801) 366-7770 or (800) 695-4877 or University Human Resource Management at (801) 581-7447 if you have questions regarding the post-retirement rules.</p>\n\n<p>This position may require the successful completion of a criminal background check and/or drug screen.</p>\n\n<p>The University of Utah values candidates who have experience working in settings with students and possess a strong commitment to improving access to higher education.</p>\n\n<p>Veterans’ preference is extended to qualified applicants, upon request and consistent with University policy and Utah state law. Upon request, reasonable accommodations in the application process will be provided to individuals with disabilities.</p>\n\n<p>Consistent with state and federal law, the University of Utah does not discriminate based upon race, ethnicity, color, religion, national origin, age, disability, sex, sexual orientation, gender, gender identity, gender expression, pregnancy, pregnancy-related conditions, genetic information, or protected veteran’s status. The University does not discriminate on the basis of sex in the education program or activity that it operates, as required by Title IX and 34 CFR part 106. The requirement not to discriminate in education programs or activities extends to admission and employment. Inquiries about the application of Title IX and its regulations may be referred to the Title IX Coordinator, to the Department of Education, Office for Civil Rights, or both.</p>\n\n<p>To request a reasonable accommodation for a disability or if you or someone you know has experienced discrimination or sexual misconduct including sexual harassment, you may contact the Director/Title IX Coordinator in the Office of Equal Opportunity and Title IX ( OEO ). More information, including the Director/Title IX Coordinator’s office address, electronic mail address, and telephone number can be located at the:University of Utah Non‑Discrimination page.</p>\n\n<p>Online reports may be submitted athttps://oeo.utah.edu</p>\n\n<p>https://publicsafety.utah.edu/safetyreport/This report includes statistics about criminal offenses, hate crimes, arrests and referrals for disciplinary action, and Violence Against Women Act offenses. They also provide information about safety and security-related services offered by the University of Utah. A paper copy can be obtained by request at the Department of Public Safety located at 1658 East 500 South.</p>\n\n<p>As perUniversity of Utah policy 5-108: Transfer of Benefits Eligible Staff Members, a new hire to the University of Utah who is still serving a 12 month probationary period will not be hired into another University of Utah job (a transfer) until the successful completion of the probationary period.</p>",
+    "descriptionHash": "f504bc7357089cf7",
+    "matchedRoleTerms": [
+      "Nurse Practitioner"
+    ],
+    "matchedPediatricTerms": [
+      "Pediatric",
+      "Children"
+    ],
+    "matchedResumeAffinityTerms": [
+      "ED",
+      "outpatient"
+    ],
+    "matchedBonusTerms": [
+      "Day shift"
+    ],
+    "matchScore": 56,
+    "included": true,
+    "foundVia": "nurse practitioner",
+    "status": "open",
+    "firstSeenAt": "2026-11-16T20:31:02.831Z",
+    "lastSeenAt": "2026-11-16T20:31:02.831Z",
     "updatedAt": null,
     "closedAt": null
   }
