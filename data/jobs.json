@@ -86,7 +86,7 @@
     "descriptionHash": "d0571a52123f36f1",
     "status": "open",
     "firstSeenAt": "2026-08-28T20:41:59.318Z",
-    "lastSeenAt": "2026-11-24T21:15:39.533Z",
+    "lastSeenAt": "2026-11-25T04:13:28.238Z",
     "updatedAt": null,
     "closedAt": null,
     "matchedRoleTerms": [
@@ -158,7 +158,7 @@
     "descriptionHash": "f02f5121a7789eb0",
     "status": "open",
     "firstSeenAt": "2026-08-28T20:41:59.318Z",
-    "lastSeenAt": "2026-11-24T21:15:39.533Z",
+    "lastSeenAt": "2026-11-25T04:13:28.238Z",
     "updatedAt": null,
     "closedAt": null,
     "matchedRoleTerms": [
@@ -419,7 +419,7 @@
     "foundVia": "nurse practitioner",
     "status": "open",
     "firstSeenAt": "2026-08-28T22:44:32.973Z",
-    "lastSeenAt": "2026-11-24T21:15:39.533Z",
+    "lastSeenAt": "2026-11-25T04:13:28.238Z",
     "updatedAt": null,
     "closedAt": null,
     "matchedResumeAffinityTerms": [
@@ -465,7 +465,7 @@
     "foundVia": "nurse practitioner",
     "status": "open",
     "firstSeenAt": "2026-09-23T20:25:05.874Z",
-    "lastSeenAt": "2026-11-24T21:15:39.533Z",
+    "lastSeenAt": "2026-11-25T04:13:28.238Z",
     "updatedAt": null,
     "closedAt": null
   },
@@ -543,7 +543,7 @@
     "foundVia": "nurse practitioner",
     "status": "open",
     "firstSeenAt": "2026-09-29T20:49:22.480Z",
-    "lastSeenAt": "2026-11-24T21:15:39.533Z",
+    "lastSeenAt": "2026-11-25T04:13:28.238Z",
     "updatedAt": null,
     "closedAt": null
   },
@@ -613,11 +613,11 @@
     "matchScore": 28,
     "included": true,
     "foundVia": "APP",
-    "status": "open",
+    "status": "closed",
     "firstSeenAt": "2026-10-08T16:30:40.989Z",
     "lastSeenAt": "2026-11-24T21:15:39.533Z",
     "updatedAt": "2026-11-04T23:42:24.058Z",
-    "closedAt": null
+    "closedAt": "2026-11-25T04:13:28.238Z"
   },
   "PRN46675B": {
     "reqid": "PRN46675B",
@@ -721,7 +721,7 @@
     "foundVia": "Clinical Research Coordinator",
     "status": "open",
     "firstSeenAt": "2026-11-11T22:01:50.003Z",
-    "lastSeenAt": "2026-11-24T21:15:39.533Z",
+    "lastSeenAt": "2026-11-25T04:13:28.238Z",
     "updatedAt": null,
     "closedAt": null
   },
@@ -759,7 +759,7 @@
     "foundVia": "nurse practitioner",
     "status": "open",
     "firstSeenAt": "2026-11-16T20:31:02.831Z",
-    "lastSeenAt": "2026-11-24T21:15:39.533Z",
+    "lastSeenAt": "2026-11-25T04:13:28.238Z",
     "updatedAt": null,
     "closedAt": null
   },
@@ -796,7 +796,7 @@
     "foundVia": "nurse practitioner",
     "status": "open",
     "firstSeenAt": "2026-11-17T22:26:14.735Z",
-    "lastSeenAt": "2026-11-24T21:15:39.533Z",
+    "lastSeenAt": "2026-11-25T04:13:28.238Z",
     "updatedAt": null,
     "closedAt": null
   },
@@ -833,7 +833,42 @@
     "foundVia": "nurse practitioner",
     "status": "open",
     "firstSeenAt": "2026-11-21T02:17:09.459Z",
-    "lastSeenAt": "2026-11-24T21:15:39.533Z",
+    "lastSeenAt": "2026-11-25T04:13:28.238Z",
+    "updatedAt": null,
+    "closedAt": null
+  },
+  "PRN46866B": {
+    "reqid": "PRN46866B",
+    "title": "Clinical Research Coordinator",
+    "organization": "University of Utah",
+    "location": "Salt Lake City, UT",
+    "department": "01438 - HCI Anne Kirchhoff Program",
+    "payRange": "$29,913 to $68,625",
+    "employmentType": "Full Time",
+    "shift": "Day",
+    "workScheduleSummary": null,
+    "openDate": "11/24/2026",
+    "closeDate": "02/28/2027",
+    "applyUrl": "https://rr.jobsyn.org/11A912D8FEF647C9B497BCFB2CE02DF5",
+    "description": "<p>Details</p>\n\n<p><strong>Open Date</strong> 11/24/2026</p>\n\n<p><strong>Requisition Number</strong> PRN46866B</p>\n\n<p><strong>Job Title</strong> Clinical Research Coordinators (Non-R.N.)</p>\n\n<p><strong>Working Title</strong> Clinical Research Coordinator</p>\n\n<p><strong>Career Progression Track</strong> P00</p>\n\n<p><strong>Track Level</strong> P2 - Developing</p>\n\n<p><strong>FLSA Code</strong> Administrative</p>\n\n<p><strong>Patient Sensitive Job Code?</strong> No</p>\n\n<p><strong>Standard Hours per Week</strong> 40</p>\n\n<p><strong>Full Time or Part Time?</strong> Full Time</p>\n\n<p><strong>Shift</strong> Day</p>\n\n<p><strong>Work Schedule Summary</strong></p>\n\n<p><strong>VP Area</strong> President</p>\n\n<p><strong>Department</strong> 01438 - HCI Anne Kirchhoff Program</p>\n\n<p><strong>Location</strong> Campus</p>\n\n<p><strong>City</strong> Salt Lake City, UT</p>\n\n<p><strong>Type of Recruitment</strong> External Posting</p>\n\n<p><strong>Pay Rate Range</strong> $29,913 to $68,625</p>\n\n<p><strong>Close Date</strong> 02/28/2027</p>\n\n<p><strong>Priority Review Date (Note - Posting may close at any time)</strong></p>\n\n<p><strong>Job Summary</strong></p>\n\n<p>Coordinate day-to-day research activities for cancer control and population sciences studies, emphasizing cancer survivorship research among pediatric, adolescent, and young adult ( AYA ) cancer survivors and lymphoma populations. Implement study protocols; recruit, consent, and follow research participants; collect and manage clinical and patient-reported data; maintain regulatory documentation; and support dissemination of study findings. Collaborate closely with investigators, clinical teams, survivors, and community stakeholders to advance evidence-based approaches that improve quality of life, health outcomes, and long-term survivorship care.</p>\n\n<p><strong>Learn more about the great benefits of working for University of Utah: benefits.utah.edu</strong></p>\n\n<p><strong>The department may choose to hire at any of the below job levels and associated pay rates based on their business need and budget.</strong></p>\n\n<p><strong>Responsibilities</strong></p>\n\n<p><strong>Clinical Research Coordinator (Non-R.N.), II</strong></p>\n\n<p>Coordinate day-to-day clinical trial activities in adherence to Good Clinical Practices (GCPs), study protocols, and applicable regulations. Implement processes and organize efforts within study team to achieve objectives, coordinating research procedures, study visits, and follow-up care. Create and maintain tools and documentation to track study metrics, providing updates to management. Conduct pre-study, site qualification, study initiation, monitoring visits, and close-out activities. Maintain source documents and report adverse events. Recruit, screen, enroll, and obtain consent from study participants. Collect and maintain patient and laboratory data. Work directly with study participants and families and serve as project liaison to other departments, outside organizations, and government agencies. Works under the direction of the Primary Investigator (PI). Requires moderate skill set and proficiency in discipline. Conducts work assignments of increasing complexity, under moderate supervision with some latitude for independent judgment.</p>\n\n<p>Requires a bachelor’s (or equivalency) + 4 years or a master’s (or equivalency) + 2 years of directly related work experience. Assumes work equivalency (1 year of higher education can be substituted for 1 year of directly related work experience).</p>\n\n<p>This is a Developing-Level position in the General Professional track.</p>\n\n<p><strong>Minimum Qualifications</strong></p>\n\n<p><strong>EQUIVALENCY STATEMENT :</strong> 1 year of higher education can be substituted for 1 year of directly related work experience (Example: bachelor’s degree = 4 years of directly related work experience).</p>\n\n<p><strong>Department may hire employee at one of the following job levels:</strong></p>\n\n<p><strong>Clinical Research Coordinator (Non-R.N.), II:</strong> Requires a bachelor’s (or equivalency) + 4 years or a master’s (or equivalency) + 2 years of directly related work experience.</p>\n\n<p><strong>Preferences</strong></p>\n\n<p><strong>Type</strong> Benefited Staff</p>\n\n<p><strong>Special Instructions Summary</strong></p>\n\n<p><strong>Additional Information</strong></p>\n\n<p>The University is a participating employer with Utah Retirement Systems (“URS”). Eligible new hires with prior URS service, may elect to enroll in URS if they make the election before they become eligible for retirement (usually the first day of work). Contact Human Resources at (801) 581-7447 for information. Individuals who previously retired and are receiving monthly retirement benefits from URS are subject to URS’ post-retirement rules and restrictions. Please contact Utah Retirement Systems at (801) 366-7770 or (800) 695-4877 or University Human Resource Management at (801) 581-7447 if you have questions regarding the post-retirement rules.</p>\n\n<p>This position may require the successful completion of a criminal background check and/or drug screen.</p>\n\n<p>The University of Utah values candidates who have experience working in settings with students and possess a strong commitment to improving access to higher education.</p>\n\n<p>Veterans’ preference is extended to qualified applicants, upon request and consistent with University policy and Utah state law. Upon request, reasonable accommodations in the application process will be provided to individuals with disabilities.</p>\n\n<p>Consistent with state and federal law, the University of Utah does not discriminate based upon race, ethnicity, color, religion, national origin, age, disability, sex, sexual orientation, gender, gender identity, gender expression, pregnancy, pregnancy-related conditions, genetic information, or protected veteran’s status. The University does not discriminate on the basis of sex in the education program or activity that it operates, as required by Title IX and 34 CFR part 106. The requirement not to discriminate in education programs or activities extends to admission and employment. Inquiries about the application of Title IX and its regulations may be referred to the Title IX Coordinator, to the Department of Education, Office for Civil Rights, or both.</p>\n\n<p>To request a reasonable accommodation for a disability or if you or someone you know has experienced discrimination or sexual misconduct including sexual harassment, you may contact the Director/Title IX Coordinator in the Office of Equal Opportunity and Title IX ( OEO ). More information, including the Director/Title IX Coordinator’s office address, electronic mail address, and telephone number can be located at the:<strong>University of Utah Non‑Discrimination page</strong>.</p>\n\n<p>Online reports may be submitted at<strong>https://oeo.utah.edu</strong></p>\n\n<p>**https://publicsafety.utah.edu/safetyreport/**This report includes statistics about criminal offenses, hate crimes, arrests and referrals for disciplinary action, and Violence Against Women Act offenses. They also provide information about safety and security-related services offered by the University of Utah. A paper copy can be obtained by request at the Department of Public Safety located at 1658 East 500 South.</p>\n\n<p>As per<strong>University of Utah policy 5-108: Transfer of Benefits Eligible Staff Members</strong>, a new hire to the University of Utah who is still serving a 12 month probationary period will not be hired into another University of Utah job (a transfer) until the successful completion of the probationary period.</p>",
+    "descriptionHash": "37d752c207dd1f81",
+    "matchedRoleTerms": [
+      "Clinical Research Coordinator"
+    ],
+    "matchedPediatricTerms": [
+      "pediatric",
+      "adolescent"
+    ],
+    "matchedResumeAffinityTerms": [],
+    "matchedBonusTerms": [
+      "Day shift"
+    ],
+    "matchScore": 15,
+    "included": true,
+    "foundVia": "APP",
+    "status": "open",
+    "firstSeenAt": "2026-11-25T04:13:28.238Z",
+    "lastSeenAt": "2026-11-25T04:13:28.238Z",
     "updatedAt": null,
     "closedAt": null
   }
